@@ -5,3 +5,5 @@ This filter removes self-promotional ads, comments sections on non-social media 
 
 Add the following to your filter list.
 https://raw.githubusercontent.com/QuantumWarpCode/EloCleanWebFilter/master/filter.txt
+
+How to add a filter to uBlock Origin: https://www.maketecheasier.com/ultimate-ublock-origin-superusers-guide/#custom-filter-lists
