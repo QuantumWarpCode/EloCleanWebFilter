@@ -8,12 +8,58 @@
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
 ! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
 
-! 7/24/2020 https://www.huffpost.com
+
+
+! Section: Clickbait domains
+
+2leep.com
+adblade.com
+adsnative.com
+cdn.nmcdn.us
+content-ad.net
+content.ad
+mgid.com
+newsmaxfeednetwork.com
+outbrain.com
+revcontent.com
+taboola.com
+zergnet.com
+
+
+
+! Section: Website rules
+
+! Subsection: Social
+
+! https://www.reddit.com
+www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
+
+! https://www.youtube.com
+! Block Youtube endscreen recommendations
+www.youtube.com##.ytp-endscreen-content
+! Block Youtube trending
+www.youtube.com###endpoint > .ytd-guide-entry-renderer.style-scope > .ytd-guide-entry-renderer.style-scope.title:has-text(Trending):nth-ancestor(2)
+! Block Youtube links to gaming, premium, etc.
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
+www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2)
+www.youtube.com###related
+www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
+
+! https://twitter.com
+twitter.com##div.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n:nth-of-type(3)
+twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
+twitter.com##.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
+
+
+! Subsection: News
+
+! https://www.huffpost.com
 www.huffpost.com##.hGriUv.sc-jWBwVP
 www.huffpost.com###zone-bottom-trending
 www.huffpost.com###zone-most-shared
 
-! 7/24/2020 https://www.washingtonpost.com
+! https://www.washingtonpost.com
 www.washingtonpost.com###comments-wrapper
 www.washingtonpost.com##.right-rail.flex-column.flex.hide-for-print.grid-item--cols-lg-4.mt-md-l.grid-item--cols-md-12.grid-item--cols-sm-12.grid-item
 www.washingtonpost.com##.left-0.b.db-l.dn.bg-white.utility-bar
@@ -23,21 +69,18 @@ www.washingtonpost.com##.mr-sm-ns.mr-xs.justify-end.flex-1.flex
 www.washingtonpost.com##.ml-sm-ns.ml-xs.flex-1.flex
 www.washingtonpost.com###magnet-wrapper
 
-! 7/24/2020 https://www.reddit.com
-www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
-
-! 7/24/2020 https://www.nbcphiladelphia.com
+! https://www.nbcphiladelphia.com
 www.nbcphiladelphia.com##.nbc-most-popular
 www.nbcphiladelphia.com##.nbc_owned_television_stations_weather_iframe
 www.nbcphiladelphia.com##.recirc-module
 
-! 7/24/2020 https://www.stanforddaily.com
+! https://www.stanforddaily.com
 www.stanforddaily.com##.css-1p0cxma
 
-! 7/24/2020 https://www.foxnews.com
+! https://www.foxnews.com
 www.foxnews.com##.collection-trending.collection
 
-! 7/24/2020 https://www.techspot.com
+! https://www.techspot.com
 www.techspot.com##.subDriveRevBot
 www.techspot.com##.secondary.grid-section.grid-posts
 www.techspot.com##.article.comment-count-block
@@ -50,35 +93,14 @@ www.techspot.com##.comment-count-block
 www.techspot.com##.related-stories.related-products
 www.techspot.com##.related-query
 
-! 7/24/2020 https://webbrowsertools.com
+! https://webbrowsertools.com
 webbrowsertools.com##div.m-lr.mb-2.card-body.shadow.card:nth-of-type(6)
 
-! 7/24/2020 https://www.wmtips.com
+! https://www.wmtips.com
 www.wmtips.com##.flex > .img100.ma > [href^="https://shareasale.com/r.cfm"]
 www.wmtips.com##main > .img100.ma > [href^="https://shareasale.com/r.cfm"]
 
-! 7/24/2020 https://www.youtube.com
-! Block Youtube endscreen recommendations
-www.youtube.com##.ytp-endscreen-content
-! Block Youtube trending
-www.youtube.com###endpoint > .ytd-guide-entry-renderer.style-scope > .ytd-guide-entry-renderer.style-scope.title:has-text(Trending):nth-ancestor(2)
-! Block Youtube links to gaming, premium, etc.
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
-
-! 7/24/2020 https://www.youtube.com
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
-www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2)
-
-! 7/24/2020 https://twitter.com
-twitter.com##div.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n:nth-of-type(3)
-twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
-twitter.com##.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
-
-! 7/24/2020 https://www.youtube.com
-www.youtube.com###related
-www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
-
-! 7/24/2020 https://phys.org
+! https://phys.org
 phys.org##.d-print-none.py-5.bg-light.news-related
 phys.org##.mb-4.pb-4.row
 phys.org###news-more
@@ -89,20 +111,20 @@ phys.org##.d-print-none.d-lg-block.d-none.article-sidebar.col-xl-3.col-lg-4.col-
 phys.org##.show.fade.bg-danger.py-2.alert
 phys.org##.d-print-none.order-lg-3.order-1.align-items-center.d-flex.ml-auto.my-lg-0.mb-sm-1.col-xl-6.col-lg-7.col-12
 
-! 7/24/2020 https://www.youtube.com
+! https://www.youtube.com
 www.youtube.com###label:has-text(Paid memberships):nth-ancestor(2)
 
-! 7/25/2020 https://www.wired.com
+! https://www.wired.com
 www.wired.com##.paywall-container-component
 
-! 7/26/2020 https://www.msn.com
+! https://www.msn.com
 www.msn.com##.head
 www.msn.com##body > .normalsection > .full-width > .sectioncontent
 www.msn.com###sticky-footer-wrapper
 www.msn.com###prefooter
 www.msn.com###stickyTitleBar
 
-! 7/26/2020 https://www.bostonglobe.com
+! https://www.bostonglobe.com
 www.bostonglobe.com##.width_full.padding_16.border_thick.border_box.border_bottom--tablet-only.border_bottom--mobile.\|.VideoPlaylist
 www.bostonglobe.com##.width_full.border_box.custom-follow-bar
 www.bostonglobe.com##.width_full.padding_horizontal_16.padding_vertical.image_full.border_box.background_gray_10.list_feed.\|.feature_feed
@@ -111,16 +133,16 @@ www.bostonglobe.com##.width_full.padding_horizontal_16.padding_vertical.image_fu
 www.bostonglobe.com###bottom
 www.bostonglobe.com##.sign_in_settings_container
 
-! 7/26/2020 https://concealednation.org
+! https://concealednation.org
 concealednation.org##.post-newsletter-form
 concealednation.org##.entry-prev-next-post
 concealednation.org###comments
 concealednation.org###trending_posts_widget-3
 
-! 7/26/2020 https://www.thegatewaypundit.com
+! https://www.thegatewaypundit.com
 www.thegatewaypundit.com##.widget-area.sidebar-primary.sidebar
 
-! 7/27/2020 https://www.vice.com
+! https://www.vice.com
 ! Footer crap
 www.vice.com##.recirc-footer
 ! Side rail crap
@@ -128,14 +150,14 @@ www.vice.com##.short-form__body__right-rail
 ! Email sub ad
 www.vice.com##.main-content > .observer > .observer__content > .short-form > .short-form__body > .short-form__body__article-body > .article__body-components > span.size--article.abc__textblock > p > em > strong:has-text(Want the best of VICE News straight to your inbox?):nth-ancestor(2)
 
-! 7/30/2020 https://www.washingtontimes.com
+! https://www.washingtontimes.com
 www.washingtontimes.com###opinion-signup-block
 
-! 7/30/2020 https://www.ghacks.net
+! https://www.ghacks.net
 www.ghacks.net##.ghacks-sidebar
 www.ghacks.net###comments
 
-! 7/30/2020 https://www.foxnews.com
+! https://www.foxnews.com
 www.foxnews.com##.spot-im-conversation-module.spcv_conversation-module.spcv_light.spcv_foxnews.spcv_conversation-view
 ||static.foxnews.com/static/orion/styles/img/fox-news/nation-promo/nation_promo_2020_American_Arenas.jpg$image
 www.foxnews.com##.login
