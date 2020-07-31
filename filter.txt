@@ -187,6 +187,11 @@ www.washingtontimes.com###opinion-signup-block
 
 ! Subsection: Other
 
+! https://duckduckgo.com
+duckduckgo.com##.js-onboarding-ed.onboarding-ed
+duckduckgo.com##.header__label.showcase.header--aside__item
+duckduckgo.com##.social.header__label.header--aside__social.header--aside__item > .js-hl-button.header__clickable
+
 ! https://webbrowsertools.com
 webbrowsertools.com##div.m-lr.mb-2.card-body.shadow.card:nth-of-type(6)
 
