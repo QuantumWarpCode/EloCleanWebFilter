@@ -10,6 +10,11 @@
 
 
 
+! General prefetching blocker
+||*^$csp=prefetch-src 'none'
+
+
+
 ! Section: Clickbait domains
 
 ||2leep.com^
@@ -45,8 +50,8 @@ www.youtube.com##.ytp-endscreen-content
 ! Block Youtube trending
 www.youtube.com###endpoint > .ytd-guide-entry-renderer.style-scope > .ytd-guide-entry-renderer.style-scope.title:has-text(Trending):nth-ancestor(2)
 ! Block Youtube links to gaming, premium, etc.
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2)
 www.youtube.com###related
 www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
@@ -82,9 +87,26 @@ www.ghacks.net##.ghacks-sidebar
 www.ghacks.net###comments
 
 ! https://www.huffpost.com
+! Probably needs a better rule
 www.huffpost.com##.hGriUv.sc-jWBwVP
 www.huffpost.com###zone-bottom-trending
 www.huffpost.com###zone-most-shared
+
+! https://www.imdb.com
+www.imdb.com##.navbar__imdb-pro--toggle.navbar__flyout__text-button-after-mobile.ipc-text-button.ipc-button--on-textPrimary.ipc-button--theme-baseAlt.ipc-button--core-baseAlt.ipc-button--default-height.ipc-button--single-padding.ipc-button
+www.imdb.com##.imdb-header__watchlist-button
+www.imdb.com##.imdb-header__signin-text
+www.imdb.com##.navbar__imdb-tv--toggle
+www.imdb.com##.ipc-icon--twitter.ipc-icon:nth-ancestor(4)
+www.imdb.com###sidebar
+www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(5)
+www.imdb.com##.ipc-page-grid__item--span-2.ipc-page-grid__item.featured-today.ipc-page-section--baseAlt.ipc-page-section
+www.imdb.com##.ipc-title__text:has-text(More to explore):nth-ancestor(2)
+www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(8) > section.ipc-page-grid__item--span-3.ipc-page-grid__item.ipc-page-section--baseAlt.ipc-page-section:nth-of-type(3)
+www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(7)
+www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(6)
+www.imdb.com##div.aux-content-widget-2
+www.imdb.com##.on-tv.article
 
 ! https://www.msn.com
 www.msn.com##.head
@@ -98,6 +120,11 @@ www.nbcphiladelphia.com##.nbc-most-popular
 www.nbcphiladelphia.com##.nbc_owned_television_stations_weather_iframe
 www.nbcphiladelphia.com##.recirc-module
 
+! https://www.nytimes.com
+www.nytimes.com##.css-1qor430
+www.nytimes.com##.ez4a0qj1.css-7uzm1n
+www.nytimes.com##.related-links-block
+
 ! https://phys.org
 phys.org##.d-print-none.py-5.bg-light.news-related
 phys.org##.mb-4.pb-4.row
@@ -110,6 +137,7 @@ phys.org##.show.fade.bg-danger.py-2.alert
 phys.org##.d-print-none.order-lg-3.order-1.align-items-center.d-flex.ml-auto.my-lg-0.mb-sm-1.col-xl-6.col-lg-7.col-12
 
 ! https://www.stanforddaily.com
+! probably needs a better rule
 www.stanforddaily.com##.css-1p0cxma
 
 ! https://www.techspot.com
@@ -134,6 +162,9 @@ www.washingtonpost.com##.hide-for-print.db.btn-white.btn.comments
 www.washingtonpost.com##.mr-sm-ns.mr-xs.justify-end.flex-1.flex
 www.washingtonpost.com##.ml-sm-ns.ml-xs.flex-1.flex
 www.washingtonpost.com###magnet-wrapper
+www.washingtonpost.com##.sign-up-buttons
+www.washingtonpost.com###right-rail
+www.washingtonpost.com##.bg-offwhite.items-center.flex.pa-md.bg-2.mb-md.mt-md
 
 ! https://www.wired.com
 www.wired.com##.paywall-container-component
