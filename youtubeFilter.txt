@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Youtube Filter
 ! Description: Say "E'lo" to a cleaner youtube!
 ! Expires: 7 days
-! Updated: Friday, 31 Jul 2020
+! Updated: Wednesday, 30 Aug 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! Source: https://www.malwaredomainlist.com/hostslist/hosts.txt
