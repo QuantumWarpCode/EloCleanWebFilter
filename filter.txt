@@ -187,8 +187,20 @@ www.bitchute.com##.sidebar
 www.bitchute.com##.help-us-grow
 ||disqus.com/embed/comments/?base=default&f=www-bitchute-com$subdocument
 
+! https://imgur.com
+imgur.com##.Gallery-Sidebar-Wrapper
+imgur.com##.Footer-wrapper
+imgur.com##.Gallery-Sidebar
+
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
+www.reddit.com##h2:has-text(Recent posts):nth-ancestor(3)
+www.reddit.com##h2:has-text(Trending Communities):nth-ancestor(3)
+www.reddit.com##h2:has-text(Updates from reddit):nth-ancestor(1)
+www.reddit.com###focus-PublicAccessNetwork
+www.reddit.com###focus-DailyCharts
+www.reddit.com###focus-All
+www.reddit.com###focus-Popular
 
 ! https://trovo.live
 trovo.live##.transparent.normal.download-btn.cat-button
@@ -215,9 +227,29 @@ www.youtube.com###clarify-box
 www.youtube.com###title:has-text(People also search for):nth-ancestor(6)
 www.youtube.com###title:has-text(People also watched):nth-ancestor(5)
 www.youtube.com###call-to-action-button > .ytd-watch-card-hero-video-renderer.style-scope
+www.youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+www.youtube.com###title:has-text(Related to your search):nth-ancestor(5)
+www.youtube.com###title > span.yt-formatted-string.style-scope:has-text(Searches related to):nth-ancestor(7)
+www.youtube.com###message:has-text(Live chat replay is not available for this video.):nth-ancestor(3)
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
 
 
 ! Subsection: News
+
+! https://americaoutloud.com
+americaoutloud.com###sidebar
+americaoutloud.com##.single-related-posts
+americaoutloud.com###comments
+americaoutloud.com###respond
+americaoutloud.com##.clearfix.single-navigation
+
+! https://www.arianapekary.net
+||engage.wixapps.net/chat-widget-server/renderChatWidget/index$subdocument
+www.arianapekary.net##button:has-text(Log in / Sign up)
+www.arianapekary.net##h3:has-text(Recent Posts):nth-ancestor(1)
+www.arianapekary.net##.t-VUk
+www.arianapekary.net##.blog-card-border-color.blog-card-background-color._1h6MH
+www.arianapekary.net###comments
 
 ! https://www.bostonglobe.com
 www.bostonglobe.com##.width_full.padding_16.border_thick.border_box.border_bottom--tablet-only.border_bottom--mobile.\|.VideoPlaylist
@@ -242,6 +274,9 @@ www.dailystar.co.uk##.secondary.related-column
 www.dailystar.co.uk##.mod-header > .secondary
 www.dailystar.co.uk###signin
 www.dailystar.co.uk##.breadcrumbs-news.breadcrumbs
+
+! https://www.dailytelegraph.com.au
+www.dailytelegraph.com.au##.w_tlc.w_tg-tlc-contentlist_mostviewed
 
 ! https://www.foxnews.com
 ! Trending articles
@@ -277,6 +312,8 @@ www.imdb.com##div.aux-content-widget-2
 www.imdb.com##.on-tv.article
 
 ! https://www.msn.com
+||sam.benevity.org/bonfire/v21.41/static/Msn/MsnSosWidget/index.html$subdocument
+www.msn.com##.articlebody > div
 www.msn.com##.head
 www.msn.com##body > .normalsection > .full-width > .sectioncontent
 www.msn.com###sticky-footer-wrapper
@@ -292,6 +329,16 @@ www.nbcphiladelphia.com##.recirc-module
 www.nytimes.com##.css-1qor430
 www.nytimes.com##.ez4a0qj1.css-7uzm1n
 www.nytimes.com##.related-links-block
+www.nytimes.com##.css-z4qjxy
+www.nytimes.com##.css-1382yzd
+www.nytimes.com##.css-tqabw5
+www.nytimes.com###c-col-editors-picks
+www.nytimes.com##.css-mcy7p9
+
+! https://www.pewresearch.org
+www.pewresearch.org###prc-related-widget-3
+www.pewresearch.org###secondary
+www.pewresearch.org##div.is-style-left-aligned.wp-block-prc-block-promo
 
 ! https://phys.org
 phys.org##.d-print-none.py-5.bg-light.news-related
@@ -311,6 +358,10 @@ www.sciencedaily.com###most_popular_heading:nth-ancestor(2)
 ! probably needs a better rule
 www.stanforddaily.com##.css-1p0cxma
 
+! https://www.stitcher.com
+www.stitcher.com###similarEpisodesContainer
+www.stitcher.com###footer_main
+
 ! https://www.techspot.com
 www.techspot.com##.subDriveRevBot
 www.techspot.com##.secondary.grid-section.grid-posts
@@ -326,6 +377,18 @@ www.techspot.com##.related-query
 
 ! https://www.thegatewaypundit.com
 www.thegatewaypundit.com##.widget-area.sidebar-primary.sidebar
+
+! https://www.theguardian.com
+www.theguardian.com##.component--rhc.right-most-popular--image
+www.theguardian.com##.footer__primary > .subnav.js-expand-subnav > .gs-container
+www.theguardian.com##.js-most-popular-footer
+www.theguardian.com##.footer__primary > .subnav.js-expand-subnav
+www.theguardian.com##div.colophon__list
+www.theguardian.com##.u-cf.footer__pillars
+www.theguardian.com##.my-account
+www.theguardian.com##.new-header__cta-bar
+www.theguardian.com##.subnav--article.subnav.js-expand-subnav > .gs-container
+www.theguardian.com##.subnav--article.subnav.js-expand-subnav
 
 ! https://www.vice.com
 ! Footer crap
@@ -353,6 +416,11 @@ www.washingtonpost.com###comment_summary_button
 ! https://www.washingtontimes.com
 www.washingtontimes.com###opinion-signup-block
 
+! https://www.who.int
+www.who.int##.section-header:has-text(Related)
+www.who.int##.section-heading:has-text(Want to read more?)
+www.who.int##.text-underline.heading:has-text(Subscribe to newsletter):nth-ancestor(4)
+
 ! https://www.wired.com
 www.wired.com##.paywall-container-component
 
@@ -368,13 +436,34 @@ www.zdnet.com##.moduleRiver.module > .heading > .int:has-text(Most Recent):nth-a
 
 ! Subsection: Other
 
+! https://directory.fsf.org
+directory.fsf.org###fsf-modal-window-elem
+directory.fsf.org###fsf-modal-window-elem-container
+||static.fsf.org/nosvn/banners/2020fundraiser-spring/$subdocument
+||static.fsf.org/nosvn/join.en.png$image
+
 ! https://duckduckgo.com
 duckduckgo.com##.js-onboarding-ed.onboarding-ed
 duckduckgo.com##.header__label.showcase.header--aside__item
 duckduckgo.com##.social.header__label.header--aside__social.header--aside__item > .js-hl-button.header__clickable
 
+! https://outlook.office365.com
+outlook.office365.com###whatsnew
+
+! https://tinkers-construct.fandom.com
+tinkers-construct.fandom.com###WikiaBarWrapper
+tinkers-construct.fandom.com###mixed-content-footer
+tinkers-construct.fandom.com##.article-comments-app
+
+! https://www.vecteezy.com
+www.vecteezy.com##.rebrand-banner
+
 ! https://webbrowsertools.com
 webbrowsertools.com##div.m-lr.mb-2.card-body.shadow.card:nth-of-type(6)
+
+! https://www.whois.com
+www.whois.com##.whois_rhs_column
+www.whois.com###xdomainsBlk
 
 ! https://www.wmtips.com
 www.wmtips.com##.flex > .img100.ma > [href^="https://shareasale.com/r.cfm"]

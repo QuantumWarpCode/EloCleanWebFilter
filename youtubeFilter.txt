@@ -25,3 +25,8 @@ www.youtube.com###clarify-box
 www.youtube.com###title:has-text(People also search for):nth-ancestor(6)
 www.youtube.com###title:has-text(People also watched):nth-ancestor(5)
 www.youtube.com###call-to-action-button > .ytd-watch-card-hero-video-renderer.style-scope
+www.youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+www.youtube.com###title:has-text(Related to your search):nth-ancestor(5)
+www.youtube.com###title > span.yt-formatted-string.style-scope:has-text(Searches related to):nth-ancestor(7)
+www.youtube.com###message:has-text(Live chat replay is not available for this video.):nth-ancestor(3)
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
