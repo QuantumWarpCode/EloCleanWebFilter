@@ -1,0 +1,27 @@
+[uBlock Origin]
+! Title: E'lo Clean Youtube Filter
+! Description: Say "E'lo" to a cleaner youtube!
+! Expires: 7 days
+! Updated: Friday, 31 Jul 2020
+! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
+! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
+! Source: https://www.malwaredomainlist.com/hostslist/hosts.txt
+! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
+! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
+
+! https://www.youtube.com
+! Block Youtube endscreen recommendations
+www.youtube.com##.ytp-endscreen-content
+! Block Youtube trending
+www.youtube.com###endpoint > .ytd-guide-entry-renderer.style-scope > .ytd-guide-entry-renderer.style-scope.title:has-text(Trending):nth-ancestor(2)
+! Block Youtube links to gaming, premium, etc.
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2)
+www.youtube.com###related
+www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
+www.youtube.com###label:has-text(Paid memberships):nth-ancestor(2)
+www.youtube.com###clarify-box
+www.youtube.com###title:has-text(People also search for):nth-ancestor(6)
+www.youtube.com###title:has-text(People also watched):nth-ancestor(5)
+www.youtube.com###call-to-action-button > .ytd-watch-card-hero-video-renderer.style-scope

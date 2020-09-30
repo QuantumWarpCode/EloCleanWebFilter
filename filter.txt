@@ -53,11 +53,13 @@
 ||svg.com^
 ||thelist.com^
 ||upworthy.com^
+||wisegeek.com^
 
 
 
 ! Section : Coupon ads
 
+||couponsie.net^
 ||groupon.com^
 ||joinhoney.com^
 
@@ -210,6 +212,9 @@ www.youtube.com###related
 www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
 www.youtube.com###label:has-text(Paid memberships):nth-ancestor(2)
 www.youtube.com###clarify-box
+www.youtube.com###title:has-text(People also search for):nth-ancestor(6)
+www.youtube.com###title:has-text(People also watched):nth-ancestor(5)
+www.youtube.com###call-to-action-button > .ytd-watch-card-hero-video-renderer.style-scope
 
 
 ! Subsection: News
