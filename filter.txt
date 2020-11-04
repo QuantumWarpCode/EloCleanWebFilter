@@ -2,12 +2,12 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 30 Aug 2020
+! Updated: Wednesday, 04 Nov 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
-! Source: https://www.malwaredomainlist.com/hostslist/hosts.txt
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
 ! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
+! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 
 
 
@@ -24,6 +24,7 @@
 ||cdn.nmcdn.us^
 ||content-ad.net^
 ||content.ad^
+||gravity.com^
 ||mgid.com^
 ||newsmaxfeednetwork.com^
 ||outbrain.com^
@@ -38,6 +39,27 @@
 ||adf.ly^
 ||skimlinks.com^
 ||viglink.com^
+
+
+
+! Section: External link survey scams
+
+||cleanfiles.net^
+||downloadity.net^
+||dream-file.com^
+||fileice.net^
+||filespeedy.net^
+||fileunlckr.com^
+||hacksandcodes.com^
+||linkz.it^
+||tinyfileshost.com^
+
+
+
+! Section: Non-content embeds
+
+||addthis.com^
+||w3counter.com^
 
 
 
@@ -62,6 +84,40 @@
 ||couponsie.net^
 ||groupon.com^
 ||joinhoney.com^
+
+
+
+! Section: Anti-adblock
+
+||adblockanalytics.com^
+||howtoremoveadblock.com^
+||noadblock.com^
+||fuckadblock.sitexw.fr^
+||stopadblock.org^
+
+
+
+! Section : Third-party trackers
+
+||tracker.520call.me^
+||telemetry.art19.com^
+||tracker.cdnbye.com^
+||sw88.espn.com^
+||freegames.io/log^
+||ga-analytics.com^
+||videostats.kakao.com^
+||silkenthreadiness.info^
+||thisisacoolthing.com^
+||thisisanothercoolthing.com^
+
+
+
+! Section: Paywalls
+
+||mediapass.com^
+||piano.io^
+||smartlock.google.com^
+||tinypass.com^
 
 
 
@@ -314,6 +370,9 @@ www.bitchute.com##.sidebar
 www.bitchute.com##.help-us-grow
 ||disqus.com/embed/comments/?base=default&f=www-bitchute-com$subdocument
 
+! https://github.com
+github.com##.pr-3.mb-1:nth-ancestor(3)
+
 ! https://imgur.com
 imgur.com##.Gallery-Sidebar-Wrapper
 imgur.com##.Footer-wrapper
@@ -325,7 +384,7 @@ www.linkedin.com###news-module__title > .t-normal.t-black.t-16:has-text(LinkedIn
 www.linkedin.com##.display-flex.feed-follows-module__title > .t-normal.t-black.t-16:has-text(Add to your feed):nth-ancestor(4)
 www.linkedin.com###ember872
 
-! https://www.pixiv.net
+! https://pixiv.net
 pixiv.net##._premium-lead-popular-d-body
 pixiv.net##._premium-lead-tag-search-bar > a[href^="/premium.php"]
 pixiv.net#?#div:-abp-has(> aside + a[href^="/premium/lead/"])
@@ -372,44 +431,8 @@ m.twitch.tv##.tw-c-background-base > li:-abp-contains(you can link your Twitch a
 m.twitch.tv##.tw-c-background-base > li:-abp-contains(/With Amazon prime you can subscribe for FREE/i)
 
 ! https://twitter.com
-twitter.com##div.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n:nth-of-type(3)
-twitter.com##.r-1udh08x.r-1bro5k0.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
-twitter.com##.r-1udh08x.r-ku1wi2.r-rs99b7.r-1phboty.r-1ylenci.r-1uhd6vh.r-1uaug3w.css-1dbjc4n
-
-! https://www.youtube.com
-! Block Youtube endscreen recommendations
-www.youtube.com##.ytp-endscreen-content
-! Block Youtube trending
-www.youtube.com###endpoint > .ytd-guide-entry-renderer.style-scope > .ytd-guide-entry-renderer.style-scope.title:has-text(Trending):nth-ancestor(2)
-! Block Youtube links to gaming, premium, etc.
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
-www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2)
-www.youtube.com###related
-www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope:nth-of-type(2)
-www.youtube.com###label:has-text(Paid memberships):nth-ancestor(2)
-www.youtube.com###clarify-box
-www.youtube.com###title:has-text(People also search for):nth-ancestor(6)
-www.youtube.com###title:has-text(People also watched):nth-ancestor(5)
-www.youtube.com###call-to-action-button > .ytd-watch-card-hero-video-renderer.style-scope
-www.youtube.com###clarify-box > .ytd-watch-flexy.style-scope
-www.youtube.com###title:has-text(Related to your search):nth-ancestor(5)
-www.youtube.com###title > span.yt-formatted-string.style-scope:has-text(Searches related to):nth-ancestor(7)
-www.youtube.com###message:has-text(Live chat replay is not available for this video.):nth-ancestor(3)
-www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Twitter):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Facebook):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Blogger):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Tumblr):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Pinterest):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(LinkedIn):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Mix):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(ВКонтакте):nth-ancestor(2)
-www.youtube.com###target > .yt-share-target-renderer.style-scope:has-text(Одноклассники):nth-ancestor(2)
-www.youtube.com##.yt-third-party-share-target-section-renderer.style-scope.scroll-button
-www.youtube.com##.paper-tab.style-scope.tab-content:has-text(Community):nth-ancestor(1)
-www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
-www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super-title > .yt-formatted-string.style-scope.yt-simple-endpoint
+twitter.com##h2 > div > span:has-text(What’s happening):nth-ancestor(10)
+twitter.com##h2 > div > span:has-text(Who to follow):nth-ancestor(5)
 
 
 ! Subsection: News
@@ -455,6 +478,13 @@ www.dailystar.co.uk##.breadcrumbs-news.breadcrumbs
 
 ! https://www.dailytelegraph.com.au
 www.dailytelegraph.com.au##.w_tlc.w_tg-tlc-contentlist_mostviewed
+
+! https://www.express.co.uk
+www.express.co.uk##.most-read-stories.box
+www.express.co.uk##.latestvideos.box.new
+www.express.co.uk##section.news.box.new
+www.express.co.uk##.article-elements
+www.express.co.uk##div.header-row
 
 ! https://www.foxnews.com
 ! Trending articles
