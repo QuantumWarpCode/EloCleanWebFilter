@@ -34,9 +34,34 @@
 
 
 
+! Section: Clickbait news source domains
+
+||buzzfeed.com^
+||gawker.com^
+||grunge.com^
+||looper.com^
+||mashed.com^
+||nickiswift.com^
+||people.com^
+||svg.com^
+||thelist.com^
+||upworthy.com^
+||wisegeek.com^
+
+
+
+! Section : Coupon ads
+
+||couponsie.net^
+||groupon.com^
+||joinhoney.com^
+
+
+
 ! Section: Tracking link shorteners
 
 ||adf.ly^
+||safelinkconverter.com^
 ||skimlinks.com^
 ||viglink.com^
 
@@ -63,27 +88,19 @@
 
 
 
-! Section: Clickbait news source domains
+! Section: Resource abuse
 
-||buzzfeed.com^
-||gawker.com^
-||grunge.com^
-||looper.com^
-||mashed.com^
-||nickiswift.com^
-||people.com^
-||svg.com^
-||thelist.com^
-||upworthy.com^
-||wisegeek.com^
+||cloud-miner.eu^
+||monero-miner.net^
+||upgraderservices.cf^
 
 
 
-! Section : Coupon ads
+! Section: Resource sharing widgets
 
-||couponsie.net^
-||groupon.com^
-||joinhoney.com^
+||arc.io^
+||edgemesh.com^
+||edgeno.de^
 
 
 
