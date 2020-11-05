@@ -7,3 +7,9 @@ Add the following to your filter list.
 https://raw.githubusercontent.com/QuantumWarpCode/EloCleanWebFilter/master/filter.txt
 
 How to add a filter to uBlock Origin: https://www.maketecheasier.com/ultimate-ublock-origin-superusers-guide/#custom-filter-lists
+
+Credit for some filters from the following sources:
+
+https://github.com/llacb47/miscfilters
+https://github.com/reek/anti-adblock-killer
+https://github.com/badmojr/1Hosts

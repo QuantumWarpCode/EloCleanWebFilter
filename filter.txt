@@ -68,6 +68,26 @@
 
 
 
+! Section: Fake websites
+
+||dwarffortresswiki.com^
+||speedtest.com^
+
+
+
+! Section: Phishing
+
+||deviuser.com^
+||imgvieweriri.com^$all
+
+
+
+! Section: Scams
+
+||trellian.com^
+
+
+
 ! Section: External link survey scams
 
 ||cleanfiles.net^
@@ -105,6 +125,13 @@
 
 
 
+! Section: Malware adblock
+
+||adblock.biz^
+||the1adblocker.com^
+
+
+
 ! Section: Anti-adblock
 
 ||adblockanalytics.com^
@@ -112,6 +139,12 @@
 ||noadblock.com^
 ||fuckadblock.sitexw.fr^
 ||stopadblock.org^
+
+
+
+! Section : First-party trackers
+
+||analytics.twitter.com^
 
 
 
@@ -352,6 +385,13 @@
 
 
 
+! Section: Disturbing game websites
+
+||dressupwho.com^
+||mygames4girls.com^
+
+
+
 ! Section: Internet Explorer Hijackers
 ||ads234.com^
 ||ads345.com^
@@ -409,6 +449,20 @@ pixiv.net#?#div:has-text(> aside + a[href^="/premium/lead/"])
 pixiv.net#?#div > div + section:has-text(a[href^="/premium/lead/"])
 pixiv.net##.premium-lead
 
+! https://www.pornhub.com
+! Removes information banners on top of search pages
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###welcome
+! Removes "Live Cam Models" from search pages, as they are irrelevant to the search terms / watched videos
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.clearfix.streamateContent
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.streamatesModelsContainer
+! Removes "Recommended for you" videos, as they're also irrelevant to both the user and to the videos they're watching
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.recommendedVideos.videoblock.js-pop
+! Removes the mostly irrelevant "Pornstars" sidebar section
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###relatedPornstarSidebar
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.section_bar_sidebar:nth-of-type(8)
+! Removes the comments section
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###cmtWrapper
+
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
 www.reddit.com##h2:has-text(Recent posts):nth-ancestor(3)
@@ -419,7 +473,6 @@ www.reddit.com###focus-DailyCharts
 www.reddit.com###focus-All
 www.reddit.com###focus-Popular
 www.reddit.com##div.col:nth-of-type(4) > .hover.flat-vert > .title.flat-vert:has-text(<3):nth-ancestor(2)
-www.reddit.com##a._3dZnYgFFpifT-M_Vs2FAq6
 
 ! https://soundcloud.com
 soundcloud.com##.statsBadge__upsell
@@ -451,6 +504,7 @@ m.twitch.tv##.tw-c-background-base > li:has-text(/With Amazon prime you can subs
 ! https://twitter.com
 twitter.com##h2 > div > span:has-text(What’s happening):nth-ancestor(10)
 twitter.com##h2 > div > span:has-text(Who to follow):nth-ancestor(5)
+twitter.com##a:has-text(Explore)
 
 
 ! Subsection: News
