@@ -12,7 +12,51 @@
 
 
 ! General prefetching blocker
+
 ||*^$csp=prefetch-src 'none'
+
+
+
+! Section: NoScript ABE mimic
+! Special thanks to https://github.com/gwarser/filter-lists
+
+! Subsection: LAN
+
+/^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party
+/^\w+://172\.(?:1[6-9]|2[0-9]|3[01])(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party
+/^\w+://192\.168(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party
+! Includes link-local
+/^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$third-party
+
+
+! Subsection: Localhost
+/^\w+://127\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party
+||[::1]^$third-party
+||localhost^$third-party
+
+
+! Subsection: Any local
+
+||0.0.0.0^$third-party
+||[::]^$third-party
+
+
+! Subsection: Router domains
+
+||airbox.home^$third-party
+||arcor.easybox^$third-party
+||congstar.box^$third-party
+||connect.box^$third-party
+||easy.box^$third-party
+||fritz.box^$third-party
+||fritz.nas^$third-party
+||giga.cube^$third-party
+||hi.link^$third-party
+||router.asus.com^$third-party
+||routerlogin.com^$third-party
+||routerlogin.net^$third-party
+||samsung.router^$third-party
+||speedport.ip^$third-party
 
 
 
@@ -36,18 +80,22 @@
 
 ! Section: Clickbait news source domains
 
+! While Buzzfeed contains some real content, a lot of it is clickbait
+! Add ||buzzfed.com^$badfilter and ||buzzfeed.com^$badfilter to your list if you wish to view this site
 ||buzzfed.com^
 ||buzzfeed.com^
 ||gawker.com^
 ||grunge.com^
 ||looper.com^
 ||mashed.com^
-! MSN is a republisher and much of their content is total clickbait
+! MSN is a republisher and much of their content is clickbait
 ||msn.com^
 ||nickiswift.com^
 ||people.com^
 ||svg.com^
 ||thelist.com^
+! While Upworthy contains some real content, a lot of it is clickbait
+! Add ||upworthy.com^$badfilter to your list if you wish to view this site
 ||upworthy.com^
 ||wisegeek.com^
 
@@ -402,7 +450,7 @@
 
 ! Section: Website rules
 
-!Subsection: Gaming
+! Subsection: Gaming
 
 ! https://bulbapedia.bulbagarden.net/
 bulbapedia.bulbagarden.net###upper-article

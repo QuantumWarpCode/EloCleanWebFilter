@@ -13,3 +13,4 @@ Credit for some filters from the following sources:
 https://github.com/llacb47/miscfilters
 https://github.com/reek/anti-adblock-killer
 https://github.com/badmojr/1Hosts
+https://github.com/gwarser/filter-lists
