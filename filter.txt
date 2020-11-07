@@ -42,6 +42,8 @@
 ||grunge.com^
 ||looper.com^
 ||mashed.com^
+! MSN is a republisher and much of their content is total clickbait
+||msn.com^
 ||nickiswift.com^
 ||people.com^
 ||svg.com^
@@ -462,6 +464,18 @@ pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###relatedPornstarSide
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.section_bar_sidebar:nth-of-type(8)
 ! Removes the comments section
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###cmtWrapper
+! Remove header premium upgrade button
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###headerUpgradePremiumBtn
+! Remove subscribe button
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.loggedOut.js_videoSubscribeButton.videoSubscribeButton.subscribeButton
+! Remove footer
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.logoFooterWrapper
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.footer
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.footer-title
+! Remove recommended videos
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionRecommended
+! Remove premium videos
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionTitle > h2:has-text(Premium):nth-ancestor(2)
 
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID

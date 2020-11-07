@@ -43,3 +43,4 @@ www.youtube.com##.yt-third-party-share-target-section-renderer.style-scope.scrol
 www.youtube.com##.paper-tab.style-scope.tab-content:has-text(Community):nth-ancestor(1)
 www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super-title > .yt-formatted-string.style-scope.yt-simple-endpoint
+www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(3)
