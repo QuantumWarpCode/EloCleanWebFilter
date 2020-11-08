@@ -843,3 +843,11 @@ whois.net###midColumn
 ! https://www.wmtips.com
 www.wmtips.com##.flex > .img100.ma > [href^="https://shareasale.com/r.cfm"]
 www.wmtips.com##main > .img100.ma > [href^="https://shareasale.com/r.cfm"]
+
+
+
+! Section: Unbreak
+
+! Unbreak SponsorBlock
+@@||youtube.com/get_video_info$~script
+@@||sponsor.ajay.app^$~script

@@ -44,3 +44,7 @@ www.youtube.com##.paper-tab.style-scope.tab-content:has-text(Community):nth-ance
 www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super-title > .yt-formatted-string.style-scope.yt-simple-endpoint
 www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(3)
+
+! Unbreak SponsorBlock
+@@||youtube.com/get_video_info$~script
+@@||sponsor.ajay.app^$~script
