@@ -11,9 +11,15 @@
 
 
 
-! General prefetching blocker
+! Section: General prefetching blocker
 
 !||*^$csp=prefetch-src 'none'
+
+
+
+! Section: Delayed loading blocker
+
+*##html,body:style(opacity:1.0!important;)
 
 
 
@@ -22,24 +28,25 @@
 
 ! Subsection: LAN
 
-/^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party
-/^\w+://172\.(?:1[6-9]|2[0-9]|3[01])(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party
-/^\w+://192\.168(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party
+/^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+/^\w+://172\.(?:1[6-9]|2[0-9]|3[01])(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+/^\w+://192\.168(?:\.(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))){2}[:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
 ! Includes link-local
-/^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$third-party
+/^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
 
 
 ! Subsection: Localhost
 
-/^\w+://127\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party
-||[::1]^$third-party
-||localhost^$third-party
+/^\w+://127\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||[::1]^$third-party,domain=~localhost|~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||localhost^$third-party,domain=~localhost|~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
 
 
 ! Subsection: Any local
 
-||0.0.0.0^$third-party
-||[::]^$third-party
+||0.0.0.0^$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||[::]^$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||*.local^$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
 
 
 ! Subsection: Router domains
@@ -58,6 +65,7 @@
 ||routerlogin.net^$third-party
 ||samsung.router^$third-party
 ||speedport.ip^$third-party
+||tplinkwifi.net^$third-party
 
 
 
@@ -102,6 +110,12 @@
 
 
 
+! Section : Ad servers
+
+||trafficjunky.com^
+
+
+
 ! Section : Coupon ads
 
 ||couponsie.net^
@@ -117,11 +131,18 @@
 ||skimlinks.com^
 ||viglink.com^
 
+! Domains from fake UBlock, likely used for tracking or XSS
+! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
+||shor.link/s/r/*^
+||shor.link/s/i/*^
+||staticxev.com/s/s/*^
+
 
 
 ! Section: Fake websites
 
 ||Abcnews.com.co^
+||com.com^
 ||dwarffortresswiki.com^
 ||MSNBC.com.co^
 ||MSNBC.website^
@@ -139,6 +160,17 @@
 ! Section: Scams
 
 ||trellian.com^
+
+
+
+! Section: Honeypots
+
+||copyhomework.com^
+||coursecopy.com^
+||quiztoolbox.com^
+||quizlookup.com^
+||studyeffect.com^
+||testbooksolutions.com^
 
 
 
@@ -167,11 +199,18 @@
 
 
 
-! Section: Resource abuse
+! Section: Coin miners
 
 ||cloud-miner.eu^
 ||monero-miner.net^
 ||upgraderservices.cf^
+
+
+
+! Section: Code-optimizing resource abuse
+
+||bugsnag.com^
+||sentry.io^
 
 
 
@@ -186,17 +225,30 @@
 ! Section: Malware adblock
 
 ||adblock.biz^
+||adblock.fr^
+||dev-nano.com^
 ||the1adblocker.com^
+||ublock.org^
+||ublockerext.com^
+||video-adblock.com^
+||vid-adblocker.com^
 
 
 
 ! Section: Anti-adblock
 
 ||adblockanalytics.com^
+||fuckadblock.sitexw.fr^
 ||howtoremoveadblock.com^
 ||noadblock.com^
-||fuckadblock.sitexw.fr^
 ||stopadblock.org^
+
+
+
+! Section: Google monopolization
+
+||cdn.ampproject.org^
+||google.com/chrome^
 
 
 
@@ -214,10 +266,13 @@
 ||sw88.espn.com^
 ||freegames.io/log^
 ||ga-analytics.com^
-||videostats.kakao.com^
+||online-metrix.net^
+||optinmonster.com^
+||www.purplestats.com^
 ||silkenthreadiness.info^
 ||thisisacoolthing.com^
 ||thisisanothercoolthing.com^
+||videostats.kakao.com^
 
 
 
@@ -456,6 +511,12 @@
 
 
 
+! Section: Generic Malware
+
+||http://wikileaks.org/syria-files/attach/222/222051_instruction.zip$all
+
+
+
 ! Section: Website rules
 
 ! Subsection: Gaming
@@ -484,7 +545,15 @@ tinkers-construct.fandom.com##.article-comments-app
 ! https://www.bitchute.com
 www.bitchute.com##.sidebar
 www.bitchute.com##.help-us-grow
+www.bitchute.com###comment-frm-container
+www.bitchute.com##div.row:nth-of-type(4) > .col-xs-12
 ||disqus.com/embed/comments/?base=default&f=www-bitchute-com$subdocument
+
+! 2020-11-10 https://discord.com
+discord.com##button:has-text(Download):nth-ancestor(1)
+
+! https://disqus.com
+disqus.com###reactions
 
 ! https://github.com
 github.com##.pr-3.mb-1:nth-ancestor(3)
@@ -543,6 +612,11 @@ www.reddit.com###focus-DailyCharts
 www.reddit.com###focus-All
 www.reddit.com###focus-Popular
 www.reddit.com##div.col:nth-of-type(4) > .hover.flat-vert > .title.flat-vert:has-text(<3):nth-ancestor(2)
+www.reddit.com###siteTable.modactionlisting.sitetable .modactions.editflair:nth-ancestor(2)
+www.reddit.com##.EUCookieNotice
+www.reddit.com##a[href="/r/popular/"]
+www.reddit.com##a[href="/rpan/"]
+www.reddit.com##a[href="https://www.reddit.com/chat"]
 
 ! https://soundcloud.com
 soundcloud.com##.statsBadge__upsell
@@ -608,6 +682,12 @@ concealednation.org##.post-newsletter-form
 concealednation.org##.entry-prev-next-post
 concealednation.org###comments
 concealednation.org###trending_posts_widget-3
+
+! https://www.dailymail.co.uk
+www.dailymail.co.uk##.beta
+www.dailymail.co.uk###mini-carousel-wrapper
+www.dailymail.co.uk##.alpha > .news.item
+www.dailymail.co.uk###most-watched-videos-lazy-container
 
 ! https://www.dailystar.co.uk
 www.dailystar.co.uk##.tag-list
@@ -806,6 +886,9 @@ www.zdnet.com##.moduleRiver.module > .heading > .int:has-text(Most Recent):nth-a
 
 ! Subsection: Other
 
+! https://addons.mozilla.org
+addons.mozilla.org##.Button--micro.Header-button.Header-download-button.GetFirefoxButton.Button--confirm.Button
+
 ! https://directory.fsf.org
 directory.fsf.org###fsf-modal-window-elem
 directory.fsf.org###fsf-modal-window-elem-container
@@ -819,6 +902,9 @@ duckduckgo.com##.social.header__label.header--aside__social.header--aside__item 
 
 ! https://www.fantasynamegenerators.com
 ||www.fantasynamegenerators.com/images/backgrounds/noAdSquares.png$image
+
+! https://www.instructure.com
+*.instructure.com##.unsupported_browser
 
 ! https://www.justice.gov
 www.justice.gov##.usa-banner > .usa-accordion
@@ -848,6 +934,6 @@ www.wmtips.com##main > .img100.ma > [href^="https://shareasale.com/r.cfm"]
 
 ! Section: Unbreak
 
-! Unbreak SponsorBlock
-@@||youtube.com/get_video_info$~script
-@@||sponsor.ajay.app^$~script
+! Subsection: Common bad filters
+
+.gif|$document,badfilter
