@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 04 Nov 2020
+! Updated: Friday, 13 Nov 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -517,6 +517,14 @@
 
 
 
+! Section: Generic Filters
+
+! Subsection: Unsupported browser
+
+##.unsupported_browser
+
+
+
 ! Section: Website rules
 
 ! Subsection: Gaming
@@ -903,9 +911,6 @@ duckduckgo.com##.social.header__label.header--aside__social.header--aside__item 
 ! https://www.fantasynamegenerators.com
 ||www.fantasynamegenerators.com/images/backgrounds/noAdSquares.png$image
 
-! https://www.instructure.com
-*.instructure.com##.unsupported_browser
-
 ! https://www.justice.gov
 www.justice.gov##.usa-banner > .usa-accordion
 
@@ -927,8 +932,7 @@ whois.net###alternative_filters > table
 whois.net###midColumn
 
 ! https://www.wmtips.com
-www.wmtips.com##.flex > .img100.ma > [href^="https://shareasale.com/r.cfm"]
-www.wmtips.com##main > .img100.ma > [href^="https://shareasale.com/r.cfm"]
+www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 
 
 
@@ -937,3 +941,8 @@ www.wmtips.com##main > .img100.ma > [href^="https://shareasale.com/r.cfm"]
 ! Subsection: Common bad filters
 
 .gif|$document,badfilter
+
+
+! Subsection: Website specific
+
+@@||cloudfront.net/dist/fonts/instructure_icons^$font
