@@ -147,6 +147,7 @@
 ||MSNBC.com.co^
 ||MSNBC.website^
 ||speedtest.com^
+||swbattlecry.com^
 
 
 
@@ -266,9 +267,11 @@
 ||sw88.espn.com^
 ||freegames.io/log^
 ||ga-analytics.com^
+||google-analytics.com^
+||googletagmanager.com^
 ||online-metrix.net^
 ||optinmonster.com^
-||www.purplestats.com^
+||purplestats.com^
 ||silkenthreadiness.info^
 ||thisisacoolthing.com^
 ||thisisanothercoolthing.com^
@@ -519,6 +522,16 @@
 
 ! Section: Generic Filters
 
+! Subsection: Ads
+
+##.googleAds
+
+
+! Subsection: Clickbait
+
+##.outbrain-enabled
+
+
 ! Subsection: Unsupported browser
 
 ##.unsupported_browser
@@ -577,6 +590,9 @@ www.linkedin.com###news-module__title > .t-normal.t-black.t-16:has-text(LinkedIn
 www.linkedin.com##.display-flex.feed-follows-module__title > .t-normal.t-black.t-16:has-text(Add to your feed):nth-ancestor(4)
 www.linkedin.com###ember872
 
+! https://mail.google.com
+mail.google.com###talk_roster:upward(4)
+
 ! https://pixiv.net
 pixiv.net##._premium-lead-popular-d-body
 pixiv.net##._premium-lead-tag-search-bar > a[href^="/premium.php"]
@@ -609,6 +625,8 @@ pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.footer-title
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionRecommended
 ! Remove premium videos
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionTitle > h2:has-text(Premium):nth-ancestor(2)
+! Remove subscribe button
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.userActions
 
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
@@ -907,6 +925,7 @@ directory.fsf.org###fsf-modal-window-elem-container
 duckduckgo.com##.js-onboarding-ed.onboarding-ed
 duckduckgo.com##.header__label.showcase.header--aside__item
 duckduckgo.com##.social.header__label.header--aside__social.header--aside__item > .js-hl-button.header__clickable
+duckduckgo.com##.footer
 
 ! https://www.fantasynamegenerators.com
 ||www.fantasynamegenerators.com/images/backgrounds/noAdSquares.png$image
