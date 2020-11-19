@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Friday, 13 Nov 2020
+! Updated: Wednesday, 18 Nov 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -277,6 +277,18 @@
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
+
+
+
+! Section : Third-party fonts
+
+/fontawesome-$font,third-party
+/fonts/*.ttf$font,third-party
+/fonts/*.woff$font,third-party
+/fonts/*.woff2$font,third-party
+/fonts/*.otf$font,third-party
+/fonts/*.eot$font,third-party
+
 
 
 ! Subsection: Videogame analytics
@@ -1017,9 +1029,22 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 
 ! Subsection: Common bad filters
 
+! I sympathize with wanting less animations but blocking all gifs is way too broad
 .gif|$document,badfilter
 
 
 ! Subsection: Website specific
 
+! Allow fonts that are essential to webpage display
 @@||cloudfront.net/dist/fonts/instructure_icons^$font
+@@||redditstatic.com/*/fonts/*.ttf^$font,domain=reddit.com
+
+! Unbrick some sites
+@@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=help.typepad.com|regexpal.com
+@@||fast.fonts.net/jsapi/$script
+@@||fonts.googleapis.com/css?$domain=google.com|translate.google.com.hk|translate.google.co.kr|translate.google.cn|translate.google.jp
+@@||fonts.gstatic.com^$domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com
+@@||fonts.typekit.net^$domain=mpora.com
+@@||googleusercontent.com/static/fonts/$domain=tudocelular.com
+@@||maxcdn.bootstrapcdn.com/font-awesome/*/css/$domain=climatemirror.org
+@@||use.typekit.net^$domain=celyad.com|wellandgood.com
