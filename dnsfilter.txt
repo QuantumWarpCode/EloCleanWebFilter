@@ -170,8 +170,17 @@
 
 ! Section : First-party trackers
 
+! Adobe creative cloud analytics
+||hbrt.adobe.com^
+||hbrcv.adobe.com^
+||adobe.demdex.net^
+||sstats.adobe.com^
+! Twitter
 ||analytics.twitter.com^
+! Github
 ||alive.github.com^
+! Zoom
+||logfiles.zoom.us^
 
 
 
@@ -211,6 +220,7 @@
 ||stats.unity3d.com^
 ! Popcap games
 ||stats.popcap.com^
+||static-www.ec.popcap.com^
 ! Paradox Interactive uses these
 ||usage.trackjs.com^
 ||capture.trackjs.com^
@@ -222,7 +232,6 @@
 ||telemetry.art19.com^
 ||tracker.cdnbye.com^
 ||sw88.espn.com^
-||freegames.io/log^
 ||optinmonster.com^
 ||silkenthreadiness.info^
 ||thisisacoolthing.com^
@@ -234,15 +243,18 @@
 ! Section: Windows trackers
 ! Windows OS trackers only useful from hosts file
 
-! Connected User experience
+! Connected user experience
 ||cy2.vortex.data.microsoft.com.akadns.net^
 
-! Windows Error Reporting
+! Windows error reporting
 ||watson.telemetry.microsoft.com^
 ||modern.watson.data.microsoft.com.akadns.net^
 
 ! Location data
 ||location-inference-westus.cloudapp.net^
+
+! Windows setting sync
+||settings-win.data.microsoft.com^
 
 
 

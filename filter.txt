@@ -266,9 +266,18 @@
 
 ! Section : First-party trackers
 
+! Adobe creative cloud analytics
+||hbrt.adobe.com^
+||hbrcv.adobe.com^
+||adobe.demdex.net^
+||sstats.adobe.com^
+! Twitter
 ||analytics.twitter.com^
+! Github
 ||alive.github.com^
 ||gist.github.com/_alive^
+! Zoom
+||logfiles.zoom.us^
 
 
 
@@ -290,8 +299,7 @@
 ||purplestats.com^
 
 
-
-! Section : Third-party font trackers
+! Subsection : Third-party font trackers
 
 ||cloud.typography.com^$third-party
 ||disquscdn.com/next/assets/font/$third-party
@@ -329,7 +337,6 @@
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
 
 
-
 ! Subsection: Videogame analytics
 
 ! Unity Analytics
@@ -347,6 +354,7 @@
 ||stats.unity3d.com^
 ! Popcap games
 ||stats.popcap.com^
+||static-www.ec.popcap.com^
 ! Paradox Interactive uses these
 ||usage.trackjs.com^
 ||capture.trackjs.com^
