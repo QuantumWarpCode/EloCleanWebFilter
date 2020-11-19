@@ -69,6 +69,17 @@
 
 
 
+! Section: Third-party fonts
+
+/fontawesome-$font,third-party
+/fonts/*.ttf$font,third-party
+/fonts/*.woff$font,third-party
+/fonts/*.woff2$font,third-party
+/fonts/*.otf$font,third-party
+/fonts/*.eot$font,third-party
+
+
+
 ! Section: Clickbait domains
 
 ||2leep.com^
@@ -280,14 +291,42 @@
 
 
 
-! Section : Third-party fonts
+! Section : Third-party font trackers
 
-/fontawesome-$font,third-party
-/fonts/*.ttf$font,third-party
-/fonts/*.woff$font,third-party
-/fonts/*.woff2$font,third-party
-/fonts/*.otf$font,third-party
-/fonts/*.eot$font,third-party
+||cloud.typography.com^$third-party
+||disquscdn.com/next/assets/font/$third-party
+||edgefonts.net^$third-party
+||fast.fonts.com^$third-party
+||fast.fonts.net^$third-party
+||fastly.net^$font,third-party
+||fontawesome.com^$third-party
+||fontdeck.com^$third-party
+||fonts.advance.net^$third-party
+||fonts.bauernet.me^
+||fonts.condenast.com^$script,third-party
+||fonts.googleapis.com/css?
+||fonts.gotraffic.net^$script
+||fonts.gstatic.com^$third-party
+||fonts.nymag.com^$script,third-party
+||fonts.staticworld.net^$third-party
+||fonts.timeinc.net^
+||fonts.voxmedia.com^$third-party
+||google.com/swg/$font,third-party
+||googleapis.com/ajax/libs/webfont/$third-party
+||googleusercontent.com/static/fonts/$third-party
+||maxcdn.bootstrapcdn.com/font-awesome/$third-party
+||myfontastic.com^$third-party
+||myfonts.net^$third-party
+||netdna-cdn.com^*/webfonts/
+||netdna.bootstrapcdn.com^*/fonts/$third-party
+||typefront.com^$third-party
+||typekit.com^$third-party
+||typekit.net^$third-party
+||use.fonticons.com^$third-party
+||webfonts.creativecloud.com^$third-party
+||wp.com^*/fonts/$third-party
+
+/cdn-cgi/pe/bag2?*googleapis.com*webfont.js
 
 
 
@@ -566,9 +605,34 @@
 
 
 ! Section: Disturbing game websites
+! https://en.wikipedia.org/wiki/Elsagate
+! This list contains websites which may contain legitimate (albeit dull) flash games
+! Websites listed contain games targeted at children that are inappropriate, and which no sane adult would play
+! Found from SomeOrdinaryGamers investigation and search for "pregnancy games"
 
+||4j.com^
+! Babyyum appears to actually be an education site targetted at adults
+!||babyyum.com^
 ||dressupwho.com^
+||fanfreegames.com
+||freegames.com
+||game-game.com
 ||mygames4girls.com^
+||yiv.com^
+
+! I'm not as certain these sites contain the inappropriate games but I also don't know who would visit them
+! Found with search for "games for girls"
+||enjoydressup.com^
+||frozengames.org^
+||games2girls.com^
+||girlg.com^
+||girlgames.com^
+||girlgames.net^
+||girlsgames123.com^
+||girlsgogames.com^
+||girlsgogames.co.uk^
+||girls7games.com^
+||mafa.com^
 
 
 
