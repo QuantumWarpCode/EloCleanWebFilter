@@ -131,12 +131,6 @@
 ||skimlinks.com^
 ||viglink.com^
 
-! Domains from fake UBlock, likely used for tracking or XSS
-! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
-||shor.link/s/r/*^
-||shor.link/s/i/*^
-||staticxev.com/s/s/*^
-
 
 
 ! Section: Fake websites
@@ -234,6 +228,12 @@
 ||video-adblock.com^
 ||vid-adblocker.com^
 
+! Domains from fake UBlock, likely used for tracking or XSS
+! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
+||shor.link/s/r/*^
+||shor.link/s/i/*^
+||staticxev.com/s/s/*^
+
 
 
 ! Section: Anti-adblock
@@ -256,26 +256,78 @@
 ! Section : First-party trackers
 
 ||analytics.twitter.com^
+||alive.github.com^
+||gist.github.com/_alive^
 
 
 
 ! Section : Third-party trackers
+
+! Subsection: Social network analytics
+
+||syndication.twitter.com^
+
+
+! Subsection: Web analytics
+
+||crashlytics.com^
+||ga-analytics.com^
+||google-analytics.com^
+||googletagmanager.com^
+||newrelic.com^
+||online-metrix.net^
+||purplestats.com^
+
+
+! Subsection: Videogame analytics
+
+! Unity Analytics
+||hwstats.unity3d.com^
+||dsp-tracking.unityads.unity3d.com^
+||installtracker.unityads.unity3d.com^
+||tracking.adsx.unityads.unity3d.com^
+||tracking.prd.mz.internal.unity3d.com^
+||publisher-event.ads.prd.ie.internal.unity3d.com^
+||publisher-event.unityads.unity3d.com^
+||userreporting.cloud.unity3d.com^
+||analytics.cloud.unity3d.com^
+||config.uca.cloud.unity3d.com^
+||api.uca.cloud.unity3d.com^
+||stats.unity3d.com^
+! Popcap games
+||stats.popcap.com^
+! Paradox Interactive uses these
+||usage.trackjs.com^
+||capture.trackjs.com^
+! Steam platform
+||steampowered.com/default/usabilitytracking
+||video.steamstatic.com/*/stats/playerevent/?
+
+
+! Subsection: Other
 
 ||tracker.520call.me^
 ||telemetry.art19.com^
 ||tracker.cdnbye.com^
 ||sw88.espn.com^
 ||freegames.io/log^
-||ga-analytics.com^
-||google-analytics.com^
-||googletagmanager.com^
-||online-metrix.net^
 ||optinmonster.com^
-||purplestats.com^
 ||silkenthreadiness.info^
 ||thisisacoolthing.com^
 ||thisisanothercoolthing.com^
 ||videostats.kakao.com^
+
+
+
+! Section: Smart device trackers
+
+||log-ingestion.samsungacr.com^
+||lcprd1.samsungcloudsolution.net^
+||log-2.samsungacr.com^
+||ypu.samsungelectronics.com^
+||osb.samsungqbe.com^
+||upu.samsungelectronics.com^
+||dpu.samsungelectronics.com^
 
 
 
@@ -516,7 +568,7 @@
 
 ! Section: Generic Malware
 
-||http://wikileaks.org/syria-files/attach/222/222051_instruction.zip$all
+||wikileaks.org/syria-files/attach/222/222051_instruction.zip$all
 
 
 
@@ -524,12 +576,18 @@
 
 ! Subsection: Ads
 
+##.adsbox
 ##.googleAds
 
 
 ! Subsection: Clickbait
 
 ##.outbrain-enabled
+
+
+! Subsection: Annoying social media
+
+##.fa-github
 
 
 ! Subsection: Unsupported browser
