@@ -27,29 +27,6 @@
 
 
 
-! Section: Clickbait news source domains
-
-! While Buzzfeed contains some real content, a lot of it is clickbait
-! Add ||buzzfed.com^$badfilter and ||buzzfeed.com^$badfilter to your list if you wish to view this site
-||buzzfed.com^
-||buzzfeed.com^
-||gawker.com^
-||grunge.com^
-||looper.com^
-||mashed.com^
-! MSN is a republisher and much of their content is clickbait
-||msn.com^
-||nickiswift.com^
-||people.com^
-||svg.com^
-||thelist.com^
-! While Upworthy contains some real content, a lot of it is clickbait
-! Add ||upworthy.com^$badfilter to your list if you wish to view this site
-||upworthy.com^
-||wisegeek.com^
-
-
-
 ! Section : Ad servers
 
 ||trafficjunky.com^
@@ -170,9 +147,8 @@
 
 ! Domains from fake UBlock, likely used for tracking or XSS
 ! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
-||shor.link/s/r/*^
-||shor.link/s/i/*^
-||staticxev.com/s/s/*^
+||shor.link^
+||staticxev.com^
 
 
 
@@ -189,7 +165,6 @@
 ! Section: Google monopolization
 
 ||cdn.ampproject.org^
-||google.com/chrome^
 
 
 
@@ -197,7 +172,6 @@
 
 ||analytics.twitter.com^
 ||alive.github.com^
-||gist.github.com/_alive^
 
 
 
@@ -217,45 +191,6 @@
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
-
-
-
-! Section : Third-party font trackers
-
-||cloud.typography.com^$third-party
-||disquscdn.com/next/assets/font/$third-party
-||edgefonts.net^$third-party
-||fast.fonts.com^$third-party
-||fast.fonts.net^$third-party
-||fastly.net^$font,third-party
-||fontawesome.com^$third-party
-||fontdeck.com^$third-party
-||fonts.advance.net^$third-party
-||fonts.bauernet.me^
-||fonts.condenast.com^$script,third-party
-||fonts.googleapis.com/css?
-||fonts.gotraffic.net^$script
-||fonts.gstatic.com^$third-party
-||fonts.nymag.com^$script,third-party
-||fonts.staticworld.net^$third-party
-||fonts.timeinc.net^
-||fonts.voxmedia.com^$third-party
-||google.com/swg/$font,third-party
-||googleapis.com/ajax/libs/webfont/$third-party
-||googleusercontent.com/static/fonts/$third-party
-||maxcdn.bootstrapcdn.com/font-awesome/$third-party
-||myfontastic.com^$third-party
-||myfonts.net^$third-party
-||netdna-cdn.com^*/webfonts/
-||netdna.bootstrapcdn.com^*/fonts/$third-party
-||typefront.com^$third-party
-||typekit.com^$third-party
-||typekit.net^$third-party
-||use.fonticons.com^$third-party
-||webfonts.creativecloud.com^$third-party
-||wp.com^*/fonts/$third-party
-
-/cdn-cgi/pe/bag2?*googleapis.com*webfont.js
 
 
 
@@ -279,9 +214,6 @@
 ! Paradox Interactive uses these
 ||usage.trackjs.com^
 ||capture.trackjs.com^
-! Steam platform
-||steampowered.com/default/usabilitytracking
-||video.steamstatic.com/*/stats/playerevent/?
 
 
 ! Subsection: Other
@@ -296,6 +228,21 @@
 ||thisisacoolthing.com^
 ||thisisanothercoolthing.com^
 ||videostats.kakao.com^
+
+
+
+! Section: Windows trackers
+! Windows OS trackers only useful from hosts file
+
+! Connected User experience
+||cy2.vortex.data.microsoft.com.akadns.net^
+
+! Windows Error Reporting
+||watson.telemetry.microsoft.com^
+||modern.watson.data.microsoft.com.akadns.net^
+
+! Location data
+||location-inference-westus.cloudapp.net^
 
 
 
