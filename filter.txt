@@ -38,8 +38,8 @@
 ! Subsection: Localhost
 
 /^\w+://127\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
-||[::1]^$third-party,domain=~localhost|~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
-||localhost^$third-party,domain=~localhost|~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||[::1]^$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
+||localhost^$third-party,domain=~localhost|~[::1]|~127.0.0.1|~0.0.0.0|~[::]
 
 
 ! Subsection: Any local
@@ -1714,14 +1714,14 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ! Subsection: Website specific
 
 ! Allow fonts that are essential to webpage display
-@@||cloudfront.net/dist/fonts/instructure_icons^$font
+@@||cloudfront.net/dist/fonts/instructure_icons^$font,domain=*.instructure.com
 @@||redditstatic.com/*/fonts/*.ttf^$font,domain=reddit.com
 
 ! Unbrick some sites
 @@||adobedtm.com^*/launch-$script
 @@||fast.fonts.net/jsapi/$script
 
-! unbrick specific sites
+! Unbrick specific sites
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=help.typepad.com|regexpal.com
 @@||fonts.googleapis.com/css?$domain=google.com|translate.google.com.hk|translate.google.co.kr|translate.google.cn|translate.google.jp
 @@||fonts.gstatic.com^$domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com

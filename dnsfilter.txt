@@ -764,6 +764,19 @@
 ||alive.github.com^
 ! Zoom
 ||logfiles.zoom.us^
+! ESET Telemetry
+||gallup.eset.com^
+! ESET anonymous statistics
+! These prevent you from uploading suspicious files to Kaspersky
+||tsm09.eset.com^
+||tsm10.eset.com^
+||tsm11.eset.com^
+||tsm12.eset.com^
+||tsm13.eset.com^
+||tsm14.eset.com^
+||tsm15.eset.com^
+||tsm16.eset.com^
+||ts.eset.com^
 
 
 
