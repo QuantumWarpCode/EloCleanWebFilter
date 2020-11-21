@@ -1,0 +1,34 @@
+[AdGuard Home]
+! Title: E'lo Clean Web Tiktok Filter
+! Description: Say "E'lo" to a cleaner web!
+! Expires: 7 days
+! Updated: Saturday, 21 Nov 2020
+! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
+! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
+! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
+! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
+! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
+
+||abtest-va-tiktok.byteoversea.com^
+||dm-maliva16.byteoversea.com^
+||dm.bytedance.com^
+||ibytedtos.com^
+||mon-va.byteoversea.com^
+||mon.byteoversea.com^
+||muscdn.com^
+||musical.ly^
+||musically.ly^
+||p16-tiktokcdn-com.akamaized.net^
+||p16.hypstarcdn.com^
+||sf-tb-sg.ibytedtos.com^
+||sgali3.l.byteoversea.net^
+||tiktok.com^
+||tiktok.org^
+||tiktokcdn-com.akamaized.net^
+||tiktokcdn.com^
+||v16-tiktokcdn-com.akamaized.net^
+||xlog-va.byteoversea.com^
+||verification-va.byteoversea.com^
+||www.tiktok.com^
+||s16.tiktokcdn.com^
+||analytics.tiktok.com^

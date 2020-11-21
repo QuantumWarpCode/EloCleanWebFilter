@@ -15,3 +15,8 @@ https://github.com/reek/anti-adblock-killer
 https://github.com/badmojr/1Hosts
 https://github.com/gwarser/filter-lists
 https://github.com/ryanbr/fanboy-adblock/
+https://github.com/DandelionSprout/adfilt
+https://paulgb.github.io/BarbBlock/
+https://github.com/Perflyst/PiHoleBlocklist/
+https://github.com/blocklistproject/Lists
+https://github.com/Cauchon/NSABlocklist-pi-hole-edition
