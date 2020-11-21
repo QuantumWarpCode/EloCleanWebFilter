@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web DNS Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 18 Nov 2020
+! Updated: Friday, 20 Nov 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -29,6 +29,8 @@
 
 ! Section : Ad servers
 
+||ads-twitter.com^
+||adsrvr.org^
 ||trafficjunky.com^
 
 
@@ -145,6 +147,10 @@
 ||video-adblock.com^
 ||vid-adblocker.com^
 
+! https://adguard.com/en/blog/fake-ad-blockers-part-3.html
+||fly-analytics.com^
+||lh3.googleusrcontent.com^
+
 ! Domains from fake UBlock, likely used for tracking or XSS
 ! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
 ||shor.link^
@@ -175,6 +181,8 @@
 ||hbrcv.adobe.com^
 ||adobe.demdex.net^
 ||sstats.adobe.com^
+! DuckDuckGo "anonymous" analytics
+||improving.duckduckgo.com^
 ! Twitter
 ||analytics.twitter.com^
 ! Github
@@ -194,13 +202,16 @@
 ! Subsection: Web analytics
 
 ||crashlytics.com^
+||contentsquare.net^
+||demdex.net^
 ||ga-analytics.com^
 ||google-analytics.com^
 ||googletagmanager.com^
+||impactradius-event.com^
+||mparticle.com^
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
-
 
 
 ! Subsection: Videogame analytics
@@ -241,16 +252,29 @@
 
 
 ! Section: Windows trackers
+! https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1903-endpoints
 ! Windows OS trackers only useful from hosts file
+
+! Windows spotlight
+||*.search.msn.com^
+||arc.msn.com^
+||g.msn.com*^
+||query.prod.cms.rt.microsoft.com^
+||ris.api.iris.microsoft.com^
 
 ! Connected user experience
 ||cy2.vortex.data.microsoft.com.akadns.net^
+||v10.events.data.microsoft.com^
 
 ! Windows error reporting
+||co4.telecommand.telemetry.microsoft.com^
+||cs11.wpc.v0cdn.net^
+||cs1137.wpc.gammacdn.net^
 ||watson.telemetry.microsoft.com^
-||modern.watson.data.microsoft.com.akadns.net^
+||modern.watson.data.microsoft.com*^
 
 ! Location data
+||inference.location.live.net^
 ||location-inference-westus.cloudapp.net^
 
 ! Windows setting sync

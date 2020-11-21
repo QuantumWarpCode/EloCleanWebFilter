@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 18 Nov 2020
+! Updated: Friday, 20 Nov 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -123,6 +123,8 @@
 
 ! Section : Ad servers
 
+||ads-twitter.com^
+||adsrvr.org^
 ||trafficjunky.com^
 
 
@@ -239,6 +241,10 @@
 ||video-adblock.com^
 ||vid-adblocker.com^
 
+! https://adguard.com/en/blog/fake-ad-blockers-part-3.html
+||fly-analytics.com^
+||lh3.googleusrcontent.com^
+
 ! Domains from fake UBlock, likely used for tracking or XSS
 ! https://gist.github.com/gorhill/0eded47cc283c721cd7539fbc265ec63
 ||shor.link/s/r/*^
@@ -267,10 +273,13 @@
 ! Section : First-party trackers
 
 ! Adobe creative cloud analytics
+! https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html
 ||hbrt.adobe.com^
 ||hbrcv.adobe.com^
 ||adobe.demdex.net^
 ||sstats.adobe.com^
+! DuckDuckGo "anonymous" analytics
+||improving.duckduckgo.com^
 ! Twitter
 ||analytics.twitter.com^
 ! Github
@@ -291,9 +300,13 @@
 ! Subsection: Web analytics
 
 ||crashlytics.com^
+||contentsquare.net^
+||demdex.net^
 ||ga-analytics.com^
 ||google-analytics.com^
 ||googletagmanager.com^
+||impactradius-event.com^
+||mparticle.com^
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
