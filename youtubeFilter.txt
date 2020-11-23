@@ -49,6 +49,38 @@ www.youtube.com##.ytd-mini-guide-entry-renderer.style-scope.title:has-text(Home)
 ! Rickrolls
 ||youtube.com/watch?v=dQw4w9WgXcQ^
 
+
+
+! https://www.bitchute.com
+www.bitchute.com##.sidebar
+www.bitchute.com##.help-us-grow
+! Scale video to fill sidebar space
+www.bitchute.com##.video-container.col-md-9:style(width:100%!important)
+! Remove ugly comment borders
+www.bitchute.com##.video-comments:style(border:0px !important)
+www.bitchute.com##.mt5.overflow-hidden.row
+www.bitchute.com##[href="#listing-trending"]
+
+! https://odysee.com
+! Remove stupid tabs
+odysee.com##.navigation-link.button--no-style.button > .button__content:has-text(Nice People)
+odysee.com##.navigation-link.button--no-style.button > .button__content:has-text(Wild West)
+odysee.com##.navigation-link.button--no-style.button > .button__content:has-text(Finance 2.0)
+! Shrink the header
+odysee.com##.header__odysee:style(height:40px!important)
+odysee.com##.header__contents:style(height:45px!important)
+odysee.com##.main-wrapper__inner:style(padding-top:0px!important)
+odysee.com##.main-wrapper__inner:style(margin-top:50px!important)
+! Remove recommended videos
+odysee.com##.card.file-page__recommended
+odysee.com##.react-draggable.content__viewer--inline.content__viewer:style(margin-top:25px!important)
+odysee.com##.content__cover:style(background-image:none!important)
+
+! https://lbry.tv
+lbry.tv##.card.file-page__recommended
+
+
+
 ! Unbreak extensions
 @@||youtube.com/get_video_info$~script
 @@||sponsor.ajay.app^$~script

@@ -83,6 +83,8 @@
 ||freeminecoins.xyz^
 ||getmcoins.info^
 ||validgiftgenerator.com^
+! Spotted in lbry.tv comments
+||netpay1.com^
 
 
 

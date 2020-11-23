@@ -99,23 +99,28 @@
 
 
 ! Section: Clickbait news source domains
+! Websites that are in this category are entirely my opinion
+! All websites placed here are because I find the content to be low quality, sensationalist, and clickbaity
+! These are on the browser filter and not the dns filter as there is nothing dangerous about the domains, and thus they should be fine to temporarily whitelist
+! There should also be no harm in these websites being accessed outside of your web browser
 
-! While Buzzfeed contains some real content, a lot of it is clickbait
-! Add ||buzzfed.com^$badfilter and ||buzzfeed.com^$badfilter to your list if you wish to view this site
 ||buzzfed.com^
 ||buzzfeed.com^
+||cosmopolitan.com^
+||deadspin.com^
 ||gawker.com^
 ||grunge.com^
+||jezebel.com^
+||lifehacker.com^
 ||looper.com^
 ||mashed.com^
 ! MSN is a republisher and much of their content is clickbait
 ||msn.com^
+||nationalenquirer.com^
 ||nickiswift.com^
 ||people.com^
 ||svg.com^
 ||thelist.com^
-! While Upworthy contains some real content, a lot of it is clickbait
-! Add ||upworthy.com^$badfilter to your list if you wish to view this site
 ||upworthy.com^
 ||wisegeek.com^
 
@@ -177,6 +182,8 @@
 ||freeminecoins.xyz^
 ||getmcoins.info^
 ||validgiftgenerator.com^
+! Spotted in lbry.tv comments
+||netpay1.com^
 
 
 
@@ -850,9 +857,11 @@
 ! Adobe creative cloud analytics
 ! https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html
 ||hbrt.adobe.com^
-||hbrcv.adobe.com^
+||hbrcv.adobe.com^^
 ||adobe.demdex.net^
 ||sstats.adobe.com^
+! Crash reporter
+||crs.cr.adobe.com
 ! DuckDuckGo "anonymous" analytics
 ||improving.duckduckgo.com^
 ! Twitter
@@ -1245,7 +1254,7 @@
 
 
 
-! Section: Generic Malware
+! Section: Malware
 
 ||wikileaks.org/syria-files/attach/222/222051_instruction.zip$all
 
@@ -1311,14 +1320,7 @@ tinkers-construct.fandom.com##.article-comments-app
 
 ! Subsection: Social
 
-! https://www.bitchute.com
-www.bitchute.com##.sidebar
-www.bitchute.com##.help-us-grow
-www.bitchute.com###comment-frm-container
-www.bitchute.com##div.row:nth-of-type(4) > .col-xs-12
-||disqus.com/embed/comments/?base=default&f=www-bitchute-com$subdocument
-
-! 2020-11-10 https://discord.com
+! https://discord.com
 discord.com##button:has-text(Download):nth-ancestor(1)
 
 ! https://disqus.com
@@ -1683,6 +1685,12 @@ www.justice.gov##.usa-banner > .usa-accordion
 
 ! https://outlook.office365.com
 outlook.office365.com###whatsnew
+
+! https://swisscows.com
+swisscows.com##.app-links
+swisscows.com##.st-slides
+swisscows.com##.st-tagline
+swisscows.com##.tell-friends
 
 ! https://www.vecteezy.com
 www.vecteezy.com##.rebrand-banner
