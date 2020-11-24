@@ -147,6 +147,13 @@
 
 
 
+! Section: Browser freezing websites
+
+||csgo.xyz^
+||mailboxdelivery.com^
+
+
+
 ! Section: Malware adblock
 
 ||adblock.biz^
@@ -758,6 +765,9 @@
 ||hbrcv.adobe.com^
 ||adobe.demdex.net^
 ||sstats.adobe.com^
+! Mozilla Firefox
+! Prevents settings sync
+||firefox.settings.mozilla.com^
 ! DuckDuckGo "anonymous" analytics
 ||improving.duckduckgo.com^
 ! Twitter

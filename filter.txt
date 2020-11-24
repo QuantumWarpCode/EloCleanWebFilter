@@ -243,6 +243,14 @@
 ||arc.io^
 ||edgemesh.com^
 ||edgeno.de^
+/edgemesh.*.js$script
+
+
+
+! Section: Browser freezing websites
+
+||csgo.xyz^
+||mailboxdelivery.com^
 
 
 
@@ -901,6 +909,11 @@
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
+
+
+! Subsection: Other widgets
+
+/edgemesh.track.min.js$script
 
 
 ! Subsection : Third-party font trackers
@@ -1722,7 +1735,7 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ! Subsection: Website specific
 
 ! Allow fonts that are essential to webpage display
-@@||cloudfront.net/dist/fonts/instructure_icons^$font,domain=*.instructure.com
+@@||cloudfront.net/dist/fonts/instructure_icons^$font,domain=instructure.com
 @@||redditstatic.com/*/fonts/*.ttf^$font,domain=reddit.com
 
 ! Unbrick some sites
