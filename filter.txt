@@ -875,7 +875,7 @@
 ! Twitter
 ||analytics.twitter.com^
 ! Github
-||alive.github.com^
+||alive.github.com^$important
 ||gist.github.com/_alive
 ! Zoom
 ||logfiles.zoom.us^
@@ -909,6 +909,7 @@
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
+||siteimproveanalytics.com^
 
 
 ! Subsection: Other widgets
@@ -1282,6 +1283,11 @@
 ##.googleAds
 
 
+! Subsection: Anti-adblock
+
+##.anti-ad
+
+
 ! Subsection: Clickbait
 
 ##.outbrain-enabled
@@ -1390,6 +1396,7 @@ pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionRecommended
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionTitle > h2:has-text(Premium):nth-ancestor(2)
 ! Remove subscribe button
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.userActions
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.tooltipPromo
 
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
@@ -1438,6 +1445,13 @@ m.twitch.tv##.tw-c-background-base > li:has-text(/With Amazon prime you can subs
 twitter.com##h2 > div > span:has-text(What’s happening):nth-ancestor(10)
 twitter.com##h2 > div > span:has-text(Who to follow):nth-ancestor(5)
 twitter.com##a:has-text(Explore)
+twitter.com##h2:has-text(Home):upward(14):style(flex-grow:4 !important)
+twitter.com##h2:has-text(Home):upward(10):style(max-width:100% !important)
+! Widescreen fix
+twitter.com##h2:has-text(Thread):upward(14):style(flex-grow:4 !important)
+twitter.com##h2:has-text(Thread):upward(10):style(max-width:100% !important)
+twitter.com##h2:has-text(Tweet):upward(14):style(flex-grow:4 !important)
+twitter.com##h2:has-text(Tweet):upward(10):style(max-width:100% !important)
 
 
 ! Subsection: News
@@ -1472,11 +1486,22 @@ concealednation.org##.entry-prev-next-post
 concealednation.org###comments
 concealednation.org###trending_posts_widget-3
 
+! https://www.corbettreport.com
+www.corbettreport.com###text-4 > .widget-wrap
+www.corbettreport.com###text-3 > .widget-wrap
+www.corbettreport.com##.widget_text.widget
+www.corbettreport.com###menu-item-9513 > [href="https://www.corbettreport.com/members/"]
+www.corbettreport.com###menu-item-9514 > [href="https://www.corbettreport.com/shop/"]
+
 ! https://www.dailymail.co.uk
 www.dailymail.co.uk##.beta
 www.dailymail.co.uk###mini-carousel-wrapper
 www.dailymail.co.uk##.alpha > .news.item
 www.dailymail.co.uk###most-watched-videos-lazy-container
+www.dailymail.co.uk##.bdrcc.rotator
+www.dailymail.co.uk##.rc-content
+www.dailymail.co.uk##.rc-show-more-wrapper
+www.dailymail.co.uk##.article-reader-comments
 
 ! https://www.dailystar.co.uk
 www.dailystar.co.uk##.tag-list
@@ -1496,6 +1521,10 @@ www.express.co.uk##.latestvideos.box.new
 www.express.co.uk##section.news.box.new
 www.express.co.uk##.article-elements
 www.express.co.uk##div.header-row
+
+! https://followtheoutbreak.wordpress.com
+followtheoutbreak.wordpress.com##.ads-active
+followtheoutbreak.wordpress.com##p > [href^="https://wordpress.com/"]:has-text(Create a free website or blog at)
 
 ! https://www.foxnews.com
 ! Trending articles
@@ -1551,15 +1580,22 @@ www.nbcphiladelphia.com##.nbc-most-popular
 www.nbcphiladelphia.com##.nbc_owned_television_stations_weather_iframe
 www.nbcphiladelphia.com##.recirc-module
 
+! https://www.noypigeeks.com
+www.noypigeeks.com###secondary
+www.noypigeeks.com##.g1-more-from
+www.noypigeeks.com##.zem_rp_content
+www.noypigeeks.com###comments-section
+
+! https://nypost.com
+nypost.com##.right-column.sidebar
+nypost.com##.widget-more-stories
+nypost.com##.read-next-wrapper
+
 ! https://www.nytimes.com
-www.nytimes.com##.css-1qor430
-www.nytimes.com##.ez4a0qj1.css-7uzm1n
 www.nytimes.com##.related-links-block
-www.nytimes.com##.css-z4qjxy
-www.nytimes.com##.css-1382yzd
-www.nytimes.com##.css-tqabw5
 www.nytimes.com###c-col-editors-picks
-www.nytimes.com##.css-mcy7p9
+www.nytimes.com##h2:has-text(Further reading):upward(2)
+www.nytimes.com##.site_head__statement
 
 ! https://www.pewresearch.org
 www.pewresearch.org###prc-related-widget-3
@@ -1614,6 +1650,13 @@ www.techspot.com##.comment-count-block
 www.techspot.com##.related-stories.related-products
 www.techspot.com##.related-query
 
+! https://tekdeeps.com
+tekdeeps.com##.article-contextual
+
+! https://thebulletin.org
+thebulletin.org###menu-header-menu
+thebulletin.org###sitewide-banner
+
 ! https://www.thegatewaypundit.com
 www.thegatewaypundit.com##.widget-area.sidebar-primary.sidebar
 
@@ -1628,6 +1671,18 @@ www.theguardian.com##.my-account
 www.theguardian.com##.new-header__cta-bar
 www.theguardian.com##.subnav--article.subnav.js-expand-subnav > .gs-container
 www.theguardian.com##.subnav--article.subnav.js-expand-subnav
+
+! https://threatpost.com
+threatpost.com##.c-fixed-sidebar-layout--336\@md.o-row > .c-sidebar.o-col
+threatpost.com##.js-reading-wrapper.c-article:style(padding:0px !important)
+threatpost.com##.c-fixed-sidebar-layout--336\@md.o-row > div.o-col:style(padding:0px !important; max-width:100% !important;)
+threatpost.com##.c-fixed-sidebar-layout--336\@md.o-row:style(padding:0px !important; max-width:100% !important;)
+threatpost.com##p:nth-of-type(16) > strong:has-text(Hackers Put Bullseye on Healthcare:):upward(1)
+threatpost.com##.c-post-list-slider
+threatpost.com##.c-discussion
+threatpost.com##div.c-article__footer__col > .c-button--secondary.c-button
+threatpost.com##[href="https://indd.adobe.com/view/01579c19-a6ca-4cb0-8106-ed4d5d02a292"]:upward(1)
+threatpost.com##.menu-item-133958.menu-item-object-page.menu-item-type-post_type.menu-item
 
 ! https://www.vice.com
 ! Footer crap
@@ -1651,9 +1706,14 @@ www.washingtonpost.com###right-rail
 www.washingtonpost.com##.bg-offwhite.items-center.flex.pa-md.bg-2.mb-md.mt-md
 www.washingtonpost.com##wp-ad:nth-ancestor(1)
 www.washingtonpost.com###comment_summary_button
+www.washingtonpost.com##.pr-lg-lg.grid-item--cols-lg-8.mt-md-l.mt-xxs.mb-xxl-ns.br-l.b-l.grid-item--cols-md-12.grid-item--cols-sm-12.grid-item > div.hide-for-print
 
 ! https://www.washingtontimes.com
 www.washingtontimes.com###opinion-signup-block
+
+! https://www.wionews.com
+www.wionews.com###livedrag
+www.wionews.com##.clearfix.sso-toolbar-menu
 
 ! https://www.who.int
 www.who.int##.section-header:has-text(Related)
@@ -1662,6 +1722,7 @@ www.who.int##.text-underline.heading:has-text(Subscribe to newsletter):nth-ances
 
 ! https://www.wired.com
 www.wired.com##.paywall-container-component
+www.wired.com##.content-footer-related-video
 
 ! https://www.zdnet.com
 www.zdnet.com##.related-stories.module
@@ -1693,11 +1754,28 @@ duckduckgo.com##.footer
 ! https://www.fantasynamegenerators.com
 ||www.fantasynamegenerators.com/images/backgrounds/noAdSquares.png$image
 
+! https://www.frontiersin.org
+www.frontiersin.org##.container-cookies
+
 ! https://www.justice.gov
 www.justice.gov##.usa-banner > .usa-accordion
 
+! https://www.nature.com
+www.nature.com###onetrust-consent-sdk
+
+! https://www.netflix.com
+www.netflix.com##.notifications-menu
+www.netflix.com##.gifts-menu
+www.netflix.com##.show-kids
+
 ! https://outlook.office365.com
 outlook.office365.com###whatsnew
+
+! https://www.qwant.com
+www.qwant.com##.all_content
+www.qwant.com##.footer__column_right.footer__column > a.footer__menu--item:nth-of-type(2)
+www.qwant.com##.footer__menu--mr.footer__menu--item
+www.qwant.com##.footer__column_right.footer__column > .footer__menu--item:nth-of-type(4)
 
 ! https://swisscows.com
 swisscows.com##.app-links
@@ -1707,6 +1785,13 @@ swisscows.com##.tell-friends
 
 ! https://www.vecteezy.com
 www.vecteezy.com##.rebrand-banner
+
+! https://w2g.tv
+w2g.tv##.w2g-top-message-small
+
+! https://www.wcostream.com
+www.wcostream.com###star-watch-on
+www.wcostream.com###close-this-ad:nth-ancestor(3)
 
 ! https://webbrowsertools.com
 webbrowsertools.com##div.m-lr.mb-2.card-body.shadow.card:nth-of-type(6)
@@ -1750,3 +1835,5 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/css/$domain=climatemirror.org
 @@||use.typekit.net^$domain=celyad.com|wellandgood.com
+@@||static2.sharepointonline.com$font,domain=outlook.office.com
+@@||outlook-1.cdn.office.net$font,domain=outlook.office.com

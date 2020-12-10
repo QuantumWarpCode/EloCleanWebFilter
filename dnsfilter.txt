@@ -813,6 +813,7 @@
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
+||siteimproveanalytics.com^
 
 
 ! Subsection: Videogame analytics
