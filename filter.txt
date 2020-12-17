@@ -167,6 +167,8 @@
 
 ||deviuser.com^
 ||imgvieweriri.com^$all
+||intelextremeseasons.com^$all
+||loginextremeseasons.com^$all
 
 
 
@@ -1837,3 +1839,4 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 @@||use.typekit.net^$domain=celyad.com|wellandgood.com
 @@||static2.sharepointonline.com$font,domain=outlook.office.com
 @@||outlook-1.cdn.office.net$font,domain=outlook.office.com
+@@||na.static.mega.co.nz$font,domain=mega.nz
