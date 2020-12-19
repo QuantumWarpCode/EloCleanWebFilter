@@ -169,6 +169,7 @@
 ||imgvieweriri.com^$all
 ||intelextremeseasons.com^$all
 ||loginextremeseasons.com^$all
+||xnxmx.biz^$all
 
 
 
@@ -887,6 +888,8 @@
 ||www.indeed.com/rpc/cnavperf^
 ||www.indeed.com/m/rpc/frontendlogging^
 ||apply.indeed.com/indeedapply/tracking^
+! Intuit products
+||logging.api.intuit.com^
 
 
 

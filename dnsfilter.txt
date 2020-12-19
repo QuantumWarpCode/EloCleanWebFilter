@@ -68,6 +68,9 @@
 
 ||deviuser.com^
 ||imgvieweriri.com^$all
+||intelextremeseasons.com^$all
+||loginextremeseasons.com^$all
+||xnxmx.biz^$all
 
 
 
@@ -789,6 +792,13 @@
 ||tsm15.eset.com^
 ||tsm16.eset.com^
 ||ts.eset.com^
+! Evie android launcher telemetry
+||events.evie.com^
+! Intuit products
+||logging.api.intuit.com^
+! nVidia trackers
+||telemetry.nvidia.com^
+||telemetry.gfe.nvidia.com^
 
 
 
