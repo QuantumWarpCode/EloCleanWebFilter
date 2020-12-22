@@ -9,10 +9,10 @@
 ! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
 ! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 
-@@||clients4.google.com^
-@@||clients2.google.com^
-@@||android.clients.google.com^
-@@||googleapis.l.google.com^
-@@||gfwsl.geforce.com^
-@@||tracking-protection.cdn.mozilla.net^
-@@||slscr.update.microsoft.com^
+@@||clients4.google.com^$important
+@@||clients2.google.com^$important
+@@||android.clients.google.com^$important
+@@||googleapis.l.google.com^$important
+@@||gfwsl.geforce.com^$important
+@@||tracking-protection.cdn.mozilla.net^$important
+@@||slscr.update.microsoft.com^$important
