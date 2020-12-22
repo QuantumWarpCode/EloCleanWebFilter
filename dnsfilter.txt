@@ -799,6 +799,8 @@
 ! nVidia trackers
 ||telemetry.nvidia.com^
 ||telemetry.gfe.nvidia.com^
+! shapez.io
+||analytics.shapez.io^
 
 
 
