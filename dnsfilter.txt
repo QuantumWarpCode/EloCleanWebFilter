@@ -9,6 +9,8 @@
 ! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
 ! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 
+
+
 ! Section: Clickbait domains
 
 ||2leep.com^
@@ -29,9 +31,24 @@
 
 ! Section : Ad servers
 
-||ads-twitter.com^
+||adcolony.com^
+||adglare.net^
 ||adsrvr.org^
+||doubleclick.net^
+||fyber.com^
+||googleadservices.com^
+||adservice.google.de^
+||heyzap.com^
+||moatads.com^
+||mopub.com^
+||supersonicads-a.akamaihd.net^
+||supersonicads.com^
+||tapjoy.com^
+||tapjoyads.com^
 ||trafficjunky.com^
+||ads.twitter.com^
+||ads-twitter.com^
+||ads.api.vungle.com^
 
 
 
@@ -768,17 +785,12 @@
 ||hbrcv.adobe.com^
 ||adobe.demdex.net^
 ||sstats.adobe.com^
-! Mozilla Firefox
-! Prevents settings sync
-||firefox.settings.mozilla.com^
+! Apple metrics
+||metrics.icloud.com^
+||stats.gc.apple.com^
+||iadsdk.apple.com^
 ! DuckDuckGo "anonymous" analytics
 ||improving.duckduckgo.com^
-! Twitter
-||analytics.twitter.com^
-! Github
-||alive.github.com^
-! Zoom
-||logfiles.zoom.us^
 ! ESET Telemetry
 ||gallup.eset.com^
 ! ESET anonymous statistics
@@ -794,20 +806,84 @@
 ||ts.eset.com^
 ! Evie android launcher telemetry
 ||events.evie.com^
+! Github
+||alive.github.com^
+! Huawei tracker
+||servicesupport.hicloud.com^
 ! Intuit products
 ||logging.api.intuit.com^
+! Leanplum
+||leanplum.com^
+! Mozilla Firefox
+! Prevents settings sync
+||firefox.settings.mozilla.com^
+! Musically
+||log.musical.ly^
 ! nVidia trackers
 ||telemetry.nvidia.com^
 ||telemetry.gfe.nvidia.com^
+! Pinterest
+||trk.pinterest.com^
+! Quizduell
+||rt.applovin.com^
+||applvn.com^
 ! shapez.io
 ||analytics.shapez.io^
+! Snapchat
+||sc-analytics.appspot.com^
+||app-analytics.snapchat.com^
+||adserver.snapads.com^
+||euw.adserver.snapads.com^
+||euc.adserver.snapads.com^
+||usc.adserver.snapads.com^
+||ase.adserver.snapads.com^
+||tr.snapchat.com^
+! Twitter
+||analytics.twitter.com^
+! Umeng
+||alog.umeng.com^
+||alog.umengcloud.com^
+||uop.umeng.com^
+! Whatsapp
+||crashlogs.whatsapp.net^
+! Zhiliao
+||device.zhiliaoapp.com^
+! Zoom
+||logfiles.zoom.us^
 
 
 
 ! Section : Third-party trackers
 
+! Subsection: Mobile app analytics
+
+||adjust.com^
+||graph.accountkit.com^
+||dev.appboy.com^
+||events.appsflyer.com^
+||stats.appsflyer.com^
+||t.apssflyer.com^
+||api.branch.io^
+||adlog.flurry.com^
+||data.flurry.com^
+||id.google.de^
+||gate.hockeyapp.net^
+||sdk.hockeyapp.net^
+||ioam.de^
+||locarta.co^
+||mobileapptracking.com^
+||pointwise.co^
+||cp.pushwoosh.com^
+||quantcount.com^
+||ads.api.vungle.com^
+
+
 ! Subsection: Social network analytics
 
+||a-graph.facebook.com^
+||mqtt-mini.facebook.com^
+||appspot-preview.l.google.com^
+||graph.instagram.com^
 ||analytics.tiktok.com^
 ||syndication.twitter.com^
 
@@ -819,18 +895,24 @@
 ||demdex.net^
 ||ga-analytics.com^
 ||google-analytics.com^
+||googlesyndication.com^
 ||googletagmanager.com^
 ||impactradius-event.com^
+||i.w.inmobi.com^
+||sdktm.w.inmobi.com^
 ||mparticle.com^
 ||newrelic.com^
 ||online-metrix.net^
 ||purplestats.com^
+||quantcount.com^
 ||siteimproveanalytics.com^
 
 
 ! Subsection: Videogame analytics
 
-! Unity Analytics
+! Game analytics
+||api.gameanalytics.com^
+! Unity analytics
 ||hwstats.unity3d.com^
 ||dsp-tracking.unityads.unity3d.com^
 ||installtracker.unityads.unity3d.com^
