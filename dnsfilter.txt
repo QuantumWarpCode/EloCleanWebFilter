@@ -41,6 +41,7 @@
 ||heyzap.com^
 ||moatads.com^
 ||mopub.com^
+||perion.com^
 ||supersonicads-a.akamaihd.net^
 ||supersonicads.com^
 ||tapjoy.com^
@@ -69,25 +70,33 @@
 
 
 
-! Section: Fake websites
+! Section: Phishing
+
+||96.lt^
+||covid19-info.online^
+||covid19quiz.com^
+||crphone.mireene.com^
+||cybergateway.net^
+||deviuser.com^
+||imgvieweriri.com^$all
+||intelextremeseasons.com^$all
+||loginextremeseasons.com^$all
+||xnxmx.biz^$all
+
+
+
+! Section: Typosquatting
 
 ||Abcnews.com.co^
+||ashleyrnadison.com^
+||baidu.om^
+||bbc.co^
 ||com.com^
 ||dwarffortresswiki.com^
 ||MSNBC.com.co^
 ||MSNBC.website^
 ||speedtest.com^
 ||swbattlecry.com^
-
-
-
-! Section: Phishing
-
-||deviuser.com^
-||imgvieweriri.com^$all
-||intelextremeseasons.com^$all
-||loginextremeseasons.com^$all
-||xnxmx.biz^$all
 
 
 
@@ -105,6 +114,8 @@
 ||validgiftgenerator.com^
 ! Spotted in lbry.tv comments
 ||netpay1.com^
+! Fake marketplace
+||biosagentplus.com^
 
 
 
@@ -140,6 +151,7 @@
 ! Section: Non-content embeds
 
 ||addthis.com^
+||cookiereports.com^
 ||w3counter.com^
 
 
@@ -208,8 +220,6 @@
 
 ! Section: False DMCA takedown domains
 ! See BarbBlock for an explanation
-
-||functionalclam.com^
 
 ||119.29.196.104.bc.googleusercontent.com^
 ||175.220.196.104.bc.googleusercontent.com^
@@ -634,7 +644,6 @@
 ||detailedgovernment.com^
 ||discreetfield.com^
 ||dispensablestranger.com^
-||dq95d35.com^
 ||drabsize.com^
 ||drydrum.com^
 ||efficaciouscactus.com^
@@ -686,7 +695,6 @@
 ||nondescriptsmile.com^
 ||nondescriptstocking.com^
 ||obscenesidewalk.com^
-||obscenesidewalk.com^
 ||observantice.com^
 ||operationkettle.com^
 ||paradoxfactor.com^
@@ -709,10 +717,8 @@
 ||selectionsugar.com^
 ||shakesuggestion.com^
 ||shallowsmile.com^
-||shallowsmile.com^
 ||sillyscrew.com^
 ||sincerebuffalo.com^
-||sinceresofa.com^
 ||sinceresofa.com^
 ||sincerespy.com^
 ||sixscissors.com^
@@ -720,7 +726,6 @@
 ||sleepcartoon.com^
 ||slipperysack.com^
 ||smashsurprise.com^
-||smilingwaves.com^
 ||smilingwaves.com^
 ||snakesort.com^
 ||sombersea.com^
@@ -874,8 +879,6 @@
 ||mobileapptracking.com^
 ||pointwise.co^
 ||cp.pushwoosh.com^
-||quantcount.com^
-||ads.api.vungle.com^
 
 
 ! Subsection: Social network analytics
@@ -906,6 +909,7 @@
 ||purplestats.com^
 ||quantcount.com^
 ||siteimproveanalytics.com^
+||similarweb.com^
 
 
 ! Subsection: Videogame analytics
@@ -1297,6 +1301,146 @@
 
 
 
-! Section: Internet Explorer Hijackers
+! Section: Malware
+
+! Section: Browser hijackers
+
+! Internet Explorer
 ||ads234.com^
 ||ads345.com^
+! Search hijackers
+! Babylon Translator comes with a bundled search hijacker
+||babylon-software.com^
+||buenosearch.com^
+||claro-search.com^
+||conduit.com^
+||delta-search.com^
+||istartsurf.com^
+||search-daily.com^
+||searchgol.com^
+||snap.do^
+||trovi.com^
+||vosteran.com^
+
+
+! Subsection: Ad injectors
+
+! Superfish
+||superfish.com
+||best-deals-products.com^
+||venn.me^
+||pin2buy.net^
+||pintobuy.net^
+||similarproducts.net^
+||adowynel.com^
+||govenn.com^
+||group-albums.com^
+||jewelryviewer.com^
+||likethatapps.com^
+||likethatdecor.com^
+||likethatpet.com^
+||likethatpets.com^
+||testsdomain.info^
+||superfish.mobi^
+||vennit.net^
+||superfish.us^
+! Other
+||2track.info^
+||adaranth.com^
+||attacketslovern.info^
+||bestupdatemeta.com^
+||bfmio.com^
+||boudja.com^
+||check-these-girls-on.live^
+||ckk.ai^
+||coconut.rocks^
+||coolestmedia.net^
+||cooster.ru^
+||cozytech.biz^
+||genieo.com^
+||ironsrc.com^
+
+
+! Subsection: Adware risks
+
+||acountscr.cool^
+||actextdev.com^
+||addr.cx^
+||amptylogick.com^
+||analyticspage.tools^
+||api-spotify.net^
+||appmakedev.xyz^
+||appslinker.net^
+||appsource.cool^
+||beeforced.com^
+||bigestsafe.com^
+||biglinksrc.cool^
+||biosframe.com^
+||brounelink.com^
+||browfileext.com^
+||browlinkdev.xyz^
+||bugdepromo.com^
+||buycritical.com^
+||caplinkff.com^
+||captiontxt.com^
+||cardinaldata.net^
+||cdn-js.net^
+||cdn-mxpnl.com^
+||cdnclntr.com^
+||ciclonrox.com^
+||clicksapp.net^
+||clipsold.com^
+||cloffext.com^
+||cloneclicks.com^
+||clonyjohn.com^
+||closemike.com^
+||cloudesky.com^
+||colextidapp.com^
+||comandfire.net^
+||comtakelink.xyz^
+||contendevff.com^
+||cosmeticsrc.com^
+||countmake.cool^
+||craftprimes.com^
+||criticalltech.com^
+||cybertransfer.net^
+
+
+! Subsection: Malvertising
+
+||adqy6rzwcs.com^
+||bestadbid.com^
+
+
+! Subsection: Malware pop-ups
+
+||best2018games.com^
+||check-this-out-now.online^
+||consensu.org^
+
+
+! Subsection: Other potentially unwanted programs
+
+||ad2up.com^
+||auslogics.com^
+
+
+! Subsection: Various malware
+||59cn7.com^
+||7hor9gul4s.com^
+||adfuture.cn^
+||adsunflower.com^
+||adultsonly.pro^
+||advmob.cn^
+||apprefaculty.pro^
+||barenudism.com^
+||bestconvertersearch.com^
+||beta.infopicked.com^
+||betgorebysson.club^
+||cinco.net.au^
+||cjl58f3agc.com^
+||clicksgear.com^
+||cobalten.com^
+||codedexchange.com^
+||cpm20.com^
+||cybersecuritiesinc.net^

@@ -20,3 +20,4 @@ https://paulgb.github.io/BarbBlock/
 https://github.com/Perflyst/PiHoleBlocklist/
 https://github.com/blocklistproject/Lists
 https://github.com/Cauchon/NSABlocklist-pi-hole-edition
+https://gitlab.com/quidsup/notrack-blocklists
