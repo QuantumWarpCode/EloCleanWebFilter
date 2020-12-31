@@ -11,6 +11,26 @@
 
 
 
+! Section: Reg-exs
+! https://github.com/mmotti/adguard-home-filters/blob/master/regex.txt
+
+/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
+/^(.+[_.-])?telemetry[_.-]/
+/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
+/^adim(age|g)s?[0-9]*[_.-]/
+/^adtrack(er|ing)?[0-9]*[_.-]/
+/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
+/^aff(iliat(es?|ion))?[_.-]/
+/^analytics?[_.-]/
+/^banners?[_.-]/
+/^beacons?[0-9]*[_.-]/
+/^count(ers?)?[0-9]*[_.-]/
+/^mads\./
+/^pixels?[-.]/
+/^stat(s|istics)?[0-9]*[_.-]/
+
+
+
 ! Section: Clickbait domains
 
 ||2leep.com^
@@ -811,6 +831,8 @@
 ||ts.eset.com^
 ! Evie android launcher telemetry
 ||events.evie.com^
+! Swiftkey telemetry
+||telemetry.api.swiftkey.com^
 ! Github
 ||alive.github.com^
 ! Huawei tracker
@@ -935,6 +957,8 @@
 ! Paradox Interactive uses these
 ||usage.trackjs.com^
 ||capture.trackjs.com^
+! SpeedRunners
+||logger.speedrunners.doubledutchgames.com^
 
 
 ! Subsection: Other

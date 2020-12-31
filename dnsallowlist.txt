@@ -11,10 +11,17 @@
 
 
 
+! Section: Commonly broken by filter lists
+
 @@||clients4.google.com^$important
 @@||clients2.google.com^$important
 @@||android.clients.google.com^$important
 @@||googleapis.l.google.com^$important
 @@||gfwsl.geforce.com^$important
-@@||tracking-protection.cdn.mozilla.net^$important
 @@||slscr.update.microsoft.com^$important
+
+
+
+! Section: Broken by Regex
+
+@@||tracking-protection.cdn.mozilla.net^$important
