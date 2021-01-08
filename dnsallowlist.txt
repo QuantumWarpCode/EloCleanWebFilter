@@ -19,9 +19,18 @@
 @@||googleapis.l.google.com^$important
 @@||gfwsl.geforce.com^$important
 @@||slscr.update.microsoft.com^$important
+@@||fe3cr.delivery.mp.microsoft.com^$important
+@@||tlu.dl.delivery.mp.microsoft.com^$important
 
 
 
 ! Section: Broken by Regex
 
 @@||tracking-protection.cdn.mozilla.net^$important
+
+
+
+! Section: Broken by URLHaus but is legitimate
+
+! File sharing site, may contain malware but contains legitimate files
+@@||srv-store4.gofile.io^$important
