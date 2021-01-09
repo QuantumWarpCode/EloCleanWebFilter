@@ -150,6 +150,68 @@
 
 
 
+! Section: Bad VPNs
+! Thanks to https://github.com/Cauchon/NSABlocklist-pi-hole-edition
+
+! Actively spying
+||hotspotshield.com^
+
+! Luminati/Hola network
+! https://github.com/durablenapkin/block
+||l-err.biz^
+||luminati-china.biz^
+||ec2-107-22-193-119.compute-1.amazonaws.com^
+||binaryoptionz.com^
+||holacdn.com^
+||holashopping.com^
+||lum-bext.com^
+||luminatinet.com^
+||lum-lpm.com^
+||lumtest.com^
+||proxy-review.com^
+||svd-cdn.com^
+||thecodeil.com^
+||hola.tukif.com^
+||whatismyippro.com^
+||zon-networks.com^
+||whoisit.co^
+||hola.hk^
+||lum-api.io^
+||lum-cn.io^
+||lum-ext.io^
+||luminati.io^
+||luminati-china.io^
+||lum-int.io^
+||lum-sdk.io^
+||mynextphone.io^
+||topvpn.io^
+||l-agent.me^
+||luminatichina.net^
+||hola.org^
+||holashop.org^
+||h-vpn.org^
+||hola.ph^
+||hola.com.sg^
+||hola.sk^
+
+! Keys are public (easy to crack encryption)
+||astrill.com^
+||earthvpn.com^
+||gfwvpn.com^
+||ibvpn.com^
+||ipvanish.com^
+||nordvpn.com^
+||purevpn.com^
+||slickvpn.com^
+||torguard.net^
+||tigervpn.com^
+||unblockvpn.com^
+||vpnreactor.net^
+! Known as Golden Frog
+||vyprvpn.com^
+
+
+
 ! Section: External link survey scams
 
 ||cleanfiles.net^

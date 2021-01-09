@@ -30,7 +30,8 @@
 
 
 
-! Section: Broken by URLHaus but is legitimate
+! Section: Broken by URLHaus
+! Be cautious visiting any of the sites below. URLHaus tends to be accurate that they contain malware, but any whitelisted below also contain legitimate files.
 
-! File sharing site, may contain malware but contains legitimate files
+! File sharing site
 @@||srv-store4.gofile.io^$important
