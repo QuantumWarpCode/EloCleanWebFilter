@@ -908,6 +908,42 @@
 
 
 
+! Section: Facebook spyware
+! Thanks to https://github.com/gieljnssns/Social-media-Blocklists
+! In response to https://www.forbes.com/sites/zakdoffman/2021/01/09/stop-using-whatsapp-after-facebook-apple-imessage-and-signal-privacy-backlash/?sh=547967406cf5
+
+||facebook.com^
+||facebook.net^
+||fbcdn.com^
+||fbcdn.net^
+||fbsbx.com^
+||tfbnw.net^
+||fb.com^
+||fb.me^
+||profile.ak.facebook.com.edgesuite.net^
+||s-static.ak.facebook.com.edgekey.net^
+||static.ak.facebook.com.edgesuite.net^
+||connect.facebook.net.edgekey.net^
+||facebook-web-clients.appspot.com^
+||fbcdn-profile-a.akamaihd.net^
+||h-ct-m-fbx.fbsbx.com.online-metrix.net^
+||sac-h-ct-m-fbx.fbsbx.com.online-metrix.net^
+||facebook.com.edgesuite.net^
+||facebook.com.edgekey.net^
+||facebook.net.edgekey.net^
+||fbsbx.com.online-metrix.net^
+
+||instagram.com^
+||cdninstagram.com^
+||instagramstatic-a.akamaihd.net^
+||instagramstatic-a.akamaihd.net.edgesuite.net^
+
+||whatsapp.com^
+||whatsapp.net^
+||wa.me^
+
+
+
 ! Section : First-party trackers
 
 ! Adobe creative cloud analytics
@@ -2058,6 +2094,13 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ! Unbrick some sites
 @@||adobedtm.com^*/launch-$script
 @@||fast.fonts.net/jsapi/$script
+
+||do-not-tracker.org^$badfilter
+||eviltracker.net^$badfilter
+||trackersimulator.org^$badfilter
+||do-not-tracker.org^$third-party,badfilter
+||eviltracker.net^$third-party,badfilter
+||trackersimulator.org^$third-party,badfilter
 
 ! Unbrick specific sites
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=help.typepad.com|regexpal.com
