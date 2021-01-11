@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Thursday, 24 Dec 2020
+! Updated: Monday, 11 Jan 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -974,6 +974,8 @@
 ||usc.adserver.snapads.com^
 ||ase.adserver.snapads.com^
 ||tr.snapchat.com^
+! Tableau
+||telemetry.tableausoftware.com^
 ! Twitter
 ||analytics.twitter.com^
 ! Whatsapp
@@ -1012,6 +1014,8 @@
 ||quantcount.com^
 ||siteimproveanalytics.com^
 ||similarweb.com^
+
+||tableau.com^$3p
 
 
 ! Subsection: Other widgets
@@ -1805,6 +1809,9 @@ www.foxnews.com##.login
 www.ghacks.net##.ghacks-sidebar
 www.ghacks.net###comments
 
+! https://hereistheevidence.com
+hereistheevidence.com##.elementor-motion-effects-element.elementor-widget-container > .elementor-clearfix.elementor-text-editor
+
 ! https://www.huffpost.com
 ! Probably needs a better rule
 www.huffpost.com##.hGriUv.sc-jWBwVP
@@ -1896,6 +1903,19 @@ www.snopes.com##.smg-zone-main-footer.smg-zone
 www.snopes.com##.team-letter-founding-member.team-letter.card
 www.snopes.com###btn-support-header
 www.snopes.com##.content > .nav.social-buttons > a.btn-round.nav-item
+
+! https://www.sott.net
+www.sott.net###side-donate
+www.sott.net###recent-comments
+www.sott.net##[href="/subscriptions/new"]
+www.sott.net##div.sidebar-box-nohead.sidebar-box:nth-of-type(10)
+www.sott.net##[href="http://smile.amazon.com/ch/30-0204116"]
+www.sott.net##[src="/images/sidebars/revolt_22.jpg"]:upward(1)
+www.sott.net###quantum-quirks
+www.sott.net###article_comments
+www.sott.net###article-related
+www.sott.net###regaddcmmz
+www.sott.net###blog-links
 
 ! https://www.stanforddaily.com
 ! probably needs a better rule
@@ -2045,6 +2065,10 @@ www.qwant.com##.footer__column_right.footer__column > a.footer__menu--item:nth-o
 www.qwant.com##.footer__menu--mr.footer__menu--item
 www.qwant.com##.footer__column_right.footer__column > .footer__menu--item:nth-of-type(4)
 
+! https://sourceforge.net
+sourceforge.net###dlp-voip-quote:upward(1)
+sourceforge.net###nels
+
 ! https://swisscows.com
 swisscows.com##.app-links
 swisscows.com##.st-slides
@@ -2058,6 +2082,7 @@ www.vecteezy.com##.rebrand-banner
 w2g.tv##.w2g-top-message-small
 
 ! https://www.wcostream.com
+www.wcostream.com##.anti-ad
 www.wcostream.com###star-watch-on
 www.wcostream.com###close-this-ad:nth-ancestor(3)
 
@@ -2089,12 +2114,14 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 
 ! Allow fonts that are essential to webpage display
 @@||cloudfront.net/dist/fonts/instructure_icons^$font,domain=instructure.com
-@@||redditstatic.com/*/fonts/*.ttf^$font,domain=reddit.com
+@@||www.redditstatic.com^$font,domain=www.reddit.com
 
 ! Unbrick some sites
 @@||adobedtm.com^*/launch-$script
 @@||fast.fonts.net/jsapi/$script
-
+! Tableau does tracking but has content worth accessing
+||tableau.com^$badfilter
+! EFF tracker simulator is not a tracker
 ||do-not-tracker.org^$badfilter
 ||eviltracker.net^$badfilter
 ||trackersimulator.org^$badfilter

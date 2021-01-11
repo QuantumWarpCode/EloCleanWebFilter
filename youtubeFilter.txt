@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Youtube Filter
 ! Description: Say "E'lo" to a cleaner youtube!
 ! Expires: 7 days
-! Updated: Wednesday, 30 Aug 2020
+! Updated: Monday, 11 Jan 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -45,6 +45,7 @@ www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super-title > .yt-formatted-string.style-scope.yt-simple-endpoint
 www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(3)
 www.youtube.com##.ytd-mini-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(2)
+www.youtube.com###voice-search-button
 
 ! Rickrolls
 ||youtube.com/watch?v=dQw4w9WgXcQ^
@@ -78,6 +79,10 @@ odysee.com##.content__cover:style(background-image:none!important)
 
 ! https://lbry.tv
 lbry.tv##.card.file-page__recommended
+
+! https://www.nicovideo.jp
+www.nicovideo.jp##.PreVideoStartPremiumLinkContainer
+nicovideo.jp#@#.FollowButton
 
 
 

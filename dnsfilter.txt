@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web DNS Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Thursday, 24 Dec 2020
+! Updated: Monday, 11 Jan 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -866,42 +866,6 @@
 
 
 
-! Section: Facebook spyware
-! Thanks to https://github.com/gieljnssns/Social-media-Blocklists
-! In response to https://www.forbes.com/sites/zakdoffman/2021/01/09/stop-using-whatsapp-after-facebook-apple-imessage-and-signal-privacy-backlash/?sh=547967406cf5
-
-||facebook.com^
-||facebook.net^
-||fbcdn.com^
-||fbcdn.net^
-||fbsbx.com^
-||tfbnw.net^
-||fb.com^
-||fb.me^
-||profile.ak.facebook.com.edgesuite.net^
-||s-static.ak.facebook.com.edgekey.net^
-||static.ak.facebook.com.edgesuite.net^
-||connect.facebook.net.edgekey.net^
-||facebook-web-clients.appspot.com^
-||fbcdn-profile-a.akamaihd.net^
-||h-ct-m-fbx.fbsbx.com.online-metrix.net^
-||sac-h-ct-m-fbx.fbsbx.com.online-metrix.net^
-||facebook.com.edgesuite.net^
-||facebook.com.edgekey.net^
-||facebook.net.edgekey.net^
-||fbsbx.com.online-metrix.net^
-
-||instagram.com^
-||cdninstagram.com^
-||instagramstatic-a.akamaihd.net^
-||instagramstatic-a.akamaihd.net.edgesuite.net^
-
-||whatsapp.com^
-||whatsapp.net^
-||wa.me^
-
-
-
 ! Section : First-party trackers
 
 ! Adobe creative cloud analytics
@@ -964,6 +928,8 @@
 ||usc.adserver.snapads.com^
 ||ase.adserver.snapads.com^
 ||tr.snapchat.com^
+! Tableau
+||telemetry.tableausoftware.com^
 ! Twitter
 ||analytics.twitter.com^
 ! Umeng
