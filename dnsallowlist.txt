@@ -9,6 +9,9 @@
 ! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
 ! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 
+! DO NOT use this list in a browser extension. This is only for DNS blockers!
+! The whitelist, when used in a browser, will whitelist ALL connections to the sites below.
+
 
 
 ! Section: Commonly broken by filter lists
@@ -22,11 +25,14 @@
 @@||fe2cr.update.microsoft.com^$important
 @@||fe3cr.delivery.mp.microsoft.com^$important
 @@||tlu.dl.delivery.mp.microsoft.com^$important
-
+! Website that exclusively hosts TV commercials and their metrics. Don't visit it if you don't want to see them.
+@@||www.ispot.tv^
 
 
 ! Section: Broken by Regex
 
+! ADSBExchange containing "ads"
+@@||adsbexchange.com^$important
 ! Tracking protection containing "track"
 @@||tracking-protection.cdn.mozilla.net^$important
 ! EFF tracker simulation containing "track"

@@ -2128,6 +2128,8 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ||do-not-tracker.org^$third-party,badfilter
 ||eviltracker.net^$third-party,badfilter
 ||trackersimulator.org^$third-party,badfilter
+! iSpot TV hosts TV commercials but is not an "advertiser"
+||www.ispot.tv^badfilter
 
 ! Unbrick specific sites
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=help.typepad.com|regexpal.com
