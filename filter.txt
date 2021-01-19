@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Monday, 11 Jan 2020
+! Updated: Monday, 18 Jan 2020
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -995,6 +995,7 @@
 ||syndication.twitter.com^
 
 
+
 ! Subsection: Web analytics
 
 ||crashlytics.com^
@@ -1774,6 +1775,14 @@ www.dailymail.co.uk##.bdrcc.rotator
 www.dailymail.co.uk##.rc-content
 www.dailymail.co.uk##.rc-show-more-wrapper
 www.dailymail.co.uk##.article-reader-comments
+www.dailymail.co.uk###weather-wrapper > [href]
+www.dailymail.co.uk##.alpha:style(width:936px)
+www.dailymail.co.uk##.alpha:style(margin-right:0px)
+www.dailymail.co.uk##[href="https://discountcode.dailymail.co.uk/"]
+www.dailymail.co.uk##[href="//www.zoopla.co.uk"]
+www.dailymail.co.uk##[href="https://www.metro.co.uk"]
+www.dailymail.co.uk##[href="//www.jobsite.co.uk"]
+www.dailymail.co.uk##[href^="//www.mailtravel.co.uk/"]
 
 ! https://www.dailystar.co.uk
 www.dailystar.co.uk##.tag-list
@@ -1836,6 +1845,12 @@ www.imdb.com##.on-tv.article
 ! Subdomain: https://pro.imdb.com
 pro.imdb.com###logged_out_upsell > .a-section
 
+! https://www.insidethegames.biz
+www.insidethegames.biz###sidebar-right
+www.insidethegames.biz##.col-md-pull-8.col-md-2.col-sm-6.sidebar
+www.insidethegames.biz###comments
+www.insidethegames.biz###related-articles
+
 ! https://www.metrolyrics.com
 www.metrolyrics.com##.driver-related
 www.metrolyrics.com##.hot-list > h4:has-text(Popular Right Now):nth-ancestor(2)
@@ -1887,6 +1902,9 @@ phys.org##.mb-5.pt-5.row
 phys.org##.d-print-none.d-lg-block.d-none.article-sidebar.col-xl-3.col-lg-4.col-md.offset-xl-1
 phys.org##.show.fade.bg-danger.py-2.alert
 phys.org##.d-print-none.order-lg-3.order-1.align-items-center.d-flex.ml-auto.my-lg-0.mb-sm-1.col-xl-6.col-lg-7.col-12
+
+! https://www.republicworld.com
+www.republicworld.com##.relatedstory
 
 ! https://www.sciencedaily.com
 www.sciencedaily.com###most_popular_heading:nth-ancestor(2)
@@ -1959,6 +1977,12 @@ www.theguardian.com##.my-account
 www.theguardian.com##.new-header__cta-bar
 www.theguardian.com##.subnav--article.subnav.js-expand-subnav > .gs-container
 www.theguardian.com##.subnav--article.subnav.js-expand-subnav
+
+! https://www.theregister.com
+www.theregister.com###right-col
+www.theregister.com##.count.reg_btn
+www.theregister.com###story-bot-col
+www.theregister.com###boot > .adun
 
 ! https://threatpost.com
 threatpost.com##.c-fixed-sidebar-layout--336\@md.o-row > .c-sidebar.o-col
@@ -2045,6 +2069,9 @@ duckduckgo.com##.footer
 ! https://www.frontiersin.org
 www.frontiersin.org##.container-cookies
 
+! https://*.instructure.com
+instructure.com###footer
+
 ! https://www.justice.gov
 www.justice.gov##.usa-banner > .usa-accordion
 
@@ -2082,6 +2109,7 @@ www.vecteezy.com##.rebrand-banner
 w2g.tv##.w2g-top-message-small
 
 ! https://www.wcostream.com
+www.wcostream.com##.alert
 www.wcostream.com##.anti-ad
 www.wcostream.com###star-watch-on
 www.wcostream.com###close-this-ad:nth-ancestor(3)
@@ -2115,6 +2143,11 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ! Allow fonts that are essential to webpage display
 @@||cloudfront.net/dist/fonts/instructure_icons^$font,domain=instructure.com
 @@||www.redditstatic.com^$font,domain=www.reddit.com
+@@||fonts.gstatic.com^$font,domain=donorbox.org
+
+! Webannoyances ultralist unbrick instructure files page
+instructure.com##.ef-header:style(position: relative !important;)
+instructure.com##.ef-directory-header:style(position: relative !important;)
 
 ! Unbrick some sites
 @@||adobedtm.com^*/launch-$script
@@ -2128,8 +2161,6 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 ||do-not-tracker.org^$third-party,badfilter
 ||eviltracker.net^$third-party,badfilter
 ||trackersimulator.org^$third-party,badfilter
-! iSpot TV hosts TV commercials but is not an "advertiser"
-||www.ispot.tv^badfilter
 
 ! Unbrick specific sites
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=help.typepad.com|regexpal.com
@@ -2142,3 +2173,15 @@ www.wmtips.com##a[href^="https://shareasale.com/r.cfm"]
 @@||static2.sharepointonline.com$font,domain=outlook.office.com
 @@||outlook-1.cdn.office.net$font,domain=outlook.office.com
 @@||na.static.mega.co.nz$font,domain=mega.nz
+
+
+
+! Section: Broken by 1Hosts (or other popular lists)
+! 1Hosts blocks a lot of domains that are technically ads or privacy revealing, but not really in line with the goals of a content blockers.
+! Don't visit it if you don't want to see them. (These sites are not embeded as ads or trackers on other sites)
+
+! Website that exclusively hosts TV commercials and their metrics.
+||www.ispot.tv^$badfilter
+! Leaked info is linked here. These websites are useful for security researchers.
+||kiwifarms.net^$badfilter
+||raidforums.com^$badfilter

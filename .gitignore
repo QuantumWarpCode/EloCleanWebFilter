@@ -1,5 +1,7 @@
 .git/
 scripts/downloads/drop.txt
 scripts/downloads/edrop.txt
+scripts/downloads/dropv6.txt
 scripts/output/drop.txt
 scripts/output/edrop.txt
+scripts/output/dropv6.txt

@@ -908,6 +908,8 @@
 ! Mozilla Firefox
 ! Prevents settings sync
 ||firefox.settings.mozilla.com^
+! Thunderbird
+||incoming-telemetry.thunderbird.net^
 ! Musically
 ||log.musical.ly^
 ! nVidia trackers

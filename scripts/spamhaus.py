@@ -45,6 +45,26 @@ edropText += """
 
 ! """
 
+dropv6Text = """[uBlock Origin]
+! Title: Spamhaus IPv6 DROP Adguard Home
+! Description: Spamhaus IPv6 Do Not Route or Peer
+! Expires: 7 days
+! Updated: """
+
+# Datetime 
+dropv6Text += datetimeString
+
+dropv6Text += """
+! License: All rights reserved to Spamhaus Project
+! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
+! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
+! GitHub pull requests: https://github.com/QuantumWarpCode/EloCleanWebFilter/pulls
+! Writing rules: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
+! Source: https://www.spamhaus.org/drop/dropv6.txt
+! Special thanks to https://d-fault.nl/CIDRtoRegex
+
+! """
+
 def netmaskLength(netmask):
 	if netmask == "255":
 		print(netmask)
@@ -314,16 +334,26 @@ def lineToRegex(line):
 
 
 
+def v6lineToRegex(line):
+	text = "! Not yet supported.\n! "
+	text += line
+	return text
+
+
+
 # File locations
 workingdir = os.path.dirname(__file__)
 droploc = os.path.join(workingdir, 'downloads', 'drop.txt')
 dropoloc = os.path.join(workingdir, 'output', 'drop.txt')
 edroploc = os.path.join(workingdir, 'downloads', 'edrop.txt')
 edropoloc = os.path.join(workingdir, 'output', 'edrop.txt')
+dropv6loc = os.path.join(workingdir, 'downloads', 'dropv6.txt')
+dropv6oloc = os.path.join(workingdir, 'output', 'dropv6.txt')
 
 # Spamhaus list urls
 dropurl = 'https://www.spamhaus.org/drop/drop.txt'
 edropurl = 'https://www.spamhaus.org/drop/edrop.txt'
+dropv6url = 'https://www.spamhaus.org/drop/dropv6.txt'
 
 # Get current time
 time = datetime.datetime.fromtimestamp(time.time())
@@ -365,6 +395,23 @@ else:
 	print("Aquiring copy of EDROP.")
 	urllib.request.urlretrieve(edropurl, edroploc)
 
+if os.path.exists(dropv6loc):
+	dropv6time = datetime.datetime.fromtimestamp(os.stat(edroploc).st_mtime)
+	#print("EDROP file modified at: ")
+	#print(edroptime.strftime('%c'))
+	
+	dropv6days = (time - dropv6time) / datetime.timedelta(days=1)
+	#print("Time since download...")
+	#print(dropv6days)
+	if dropv6days >= 1:
+		print("Aquiring new copy of DROPv6.")
+		urllib.request.urlretrieve(dropv6url, dropv6loc)
+	else:
+		print("DROPv6 already up to date.")
+else:
+	print("Aquiring copy of DROPv6.")
+	urllib.request.urlretrieve(dropv6url, dropv6loc)
+
 
 # Read input files
 print("Reading input files.")
@@ -372,6 +419,8 @@ with open(droploc, "r") as f:
 	droplines = f.readlines()
 with open(edroploc, "r") as f:
 	edroplines = f.readlines()
+with open(dropv6loc, "r") as f:
+	dropv6lines = f.readlines()
 
 
 # Convert file to regex
@@ -396,7 +445,7 @@ for line in edroplines:
 	if line[:1] == ";":
 		if line[:3] == "; S":
 			#print("Adding copyright line...")
-			print(line[2:1])
+			print(line[2:])
 			edropText += line[2:]
 			edropText += "\n\n"
 		else:
@@ -405,6 +454,20 @@ for line in edroplines:
 		print(line, " is comment...ignoring.")
 	else:
 		edropregex.append(lineToRegex(line))
+dropv6regex = []
+for line in dropv6lines:
+	if line[:1] == ";":
+		if line[:3] == "; S":
+			#print("Adding copyright line...")
+			print(line[2:])
+			dropv6Text += line[2:]
+			dropv6Text += "\n\n"
+		else:
+			print(line, " is comment...ignoring.")
+	elif line[:1] == "#":
+		print(line, " is comment...ignoring.")
+	else:
+		dropv6regex.append(v6lineToRegex(line))
 
 
 
@@ -417,5 +480,10 @@ with open(dropoloc, "w") as f:
 with open(edropoloc, "w") as f:
 	f.write(edropText)
 	for line in edropregex:
+		f.write(line)
+		f.write("\n")
+with open(dropv6oloc, "w") as f:
+	f.write(dropv6Text)
+	for line in dropv6regex:
 		f.write(line)
 		f.write("\n")
