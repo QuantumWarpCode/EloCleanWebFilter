@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Youtube Filter
 ! Description: Say "E'lo" to a cleaner youtube!
 ! Expires: 7 days
-! Updated: Monday, 11 Jan 2020
+! Updated: Wednesday, 24 Feb 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -46,6 +46,14 @@ www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super
 www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(3)
 www.youtube.com##.ytd-mini-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(2)
 www.youtube.com###voice-search-button
+www.youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(1)
+! Annoying player controls
+www.youtube.com##.ytp-button.ytp-miniplayer-button
+www.youtube.com##.ytp-autonav-toggle-button-container:upward(1)
+! Wide comments
+www.youtube.com###secondary:style(width:0px !important)
+www.youtube.com###primary:style(max-width: 100% !important)
+www.youtube.com###secondary:style(min-width:0px !important)
 
 ! Rickrolls
 ||youtube.com/watch?v=dQw4w9WgXcQ^
@@ -83,6 +91,8 @@ lbry.tv##.card.file-page__recommended
 ! https://www.nicovideo.jp
 www.nicovideo.jp##.PreVideoStartPremiumLinkContainer
 nicovideo.jp#@#.FollowButton
+www.nicovideo.jp##.IchibaSuggest_Container
+www.nicovideo.jp##.IchibaForWatch
 
 
 

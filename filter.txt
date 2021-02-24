@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Monday, 18 Jan 2020
+! Updated: Wednesday, 24 Feb 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -258,6 +258,7 @@
 
 ||addthis.com^
 ||cookiereports.com^
+||rcd.adolab.com^
 ||w3counter.com^
 
 
@@ -901,6 +902,13 @@
 
 
 
+! Section: Anti-piracy trackers
+
+||alliance4creativity.com^
+||tracker.army^
+
+
+
 ! Section: Google monopolization
 
 ||cdn.ampproject.org^
@@ -1076,6 +1084,12 @@
 ||osb.samsungqbe.com^
 ||upu.samsungelectronics.com^
 ||dpu.samsungelectronics.com^
+
+
+
+! Section: Web annoyances
+
+||start.ubuntu.com^
 
 
 
@@ -1455,6 +1469,7 @@
 
 ||ad2up.com^
 ||auslogics.com^
+||videodownloaderultimate.com^
 
 
 ! Subsection: Email worms
@@ -1589,6 +1604,8 @@ github.com##.pr-3.mb-1:nth-ancestor(3)
 imgur.com##.Gallery-Sidebar-Wrapper
 imgur.com##.Footer-wrapper
 imgur.com##.Gallery-Sidebar
+imgur.com##.BottomRecirc
+imgur.com##.row > div > .first-item.Navigation-Container > .Navigation-next.Navigation
 
 ! https://www.linkedin.com
 www.linkedin.com###launchpad-wormhole
@@ -1598,6 +1615,9 @@ www.linkedin.com###ember872
 
 ! https://mail.google.com
 mail.google.com###talk_roster:upward(4)
+
+! https://www.patreon.com
+www.patreon.com##[href="https://www.instagram.com/patreon"]:upward(3)
 
 ! https://pixiv.net
 pixiv.net##._premium-lead-popular-d-body
@@ -1806,6 +1826,7 @@ www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(7
 www.imdb.com##div.page-grid.ipc-page-grid--bias-left.ipc-page-grid:nth-of-type(6)
 www.imdb.com##div.aux-content-widget-2
 www.imdb.com##.on-tv.article
+www.imdb.com##.banner-container
 ! Subdomain: https://pro.imdb.com
 pro.imdb.com###logged_out_upsell > .a-section
 
@@ -2138,6 +2159,8 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 @@||static2.sharepointonline.com$font,domain=outlook.office.com
 @@||outlook-1.cdn.office.net$font,domain=outlook.office.com
 @@||na.static.mega.co.nz$font,domain=mega.nz
+@@||assets.nflxext.com^$font,domain=www.netflix.com
+
 
 
 
@@ -2150,3 +2173,6 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 ! Leaked info is linked here. These websites are useful for security researchers.
 ||kiwifarms.net^$badfilter
 ||raidforums.com^$badfilter
+! "Fake" news...Let people decide that for themselves
+||100percentfedup.com^$badfilter
+||disclose.tv^$badfilter
