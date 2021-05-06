@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 24 Feb 2021
+! Updated: Thursday, 06 May 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -222,6 +222,8 @@
 ||netpay1.com^
 ! Fake marketplace
 ||biosagentplus.com^
+! Fake investment scheme
+||axxiomoptionglobal.com^
 
 
 
@@ -965,6 +967,12 @@
 ||graph.instagram.com^
 ||analytics.tiktok.com^
 ||syndication.twitter.com^
+||facebook.com^$3p
+! Only Fans
+||bug2.onlyfans.com^
+||onlyfans.com/*/stats-collect
+||onlyfans.com/api2/v2/posts/stats-collect
+||onlyfans.com/api2/v2/users/profile/stats-collect
 
 
 
@@ -1450,6 +1458,7 @@
 ||craftprimes.com^
 ||criticalltech.com^
 ||cybertransfer.net^
+||nancypetroff.com^
 
 
 ! Subsection: Malvertising
@@ -1737,6 +1746,10 @@ www.bostonglobe.com##.width_full.padding_horizontal_16.padding_vertical.image_fu
 www.bostonglobe.com###bottom
 www.bostonglobe.com##.sign_in_settings_container
 
+! https://www.bloomberg.com
+www.bloomberg.com##.rotation-item.recirc-opinion
+www.bloomberg.com##.postr-recirc--opinion.postr-recirc
+
 ! https://concealednation.org
 concealednation.org##.post-newsletter-form
 concealednation.org##.entry-prev-next-post
@@ -1836,6 +1849,9 @@ www.insidethegames.biz##.col-md-pull-8.col-md-2.col-sm-6.sidebar
 www.insidethegames.biz###comments
 www.insidethegames.biz###related-articles
 
+! https://lloydslist.maritimeintelligence.informa.com
+lloydslist.maritimeintelligence.informa.com##section.sponsored_cont.topic-featured-article.article-preview
+
 ! https://www.metrolyrics.com
 www.metrolyrics.com##.driver-related
 www.metrolyrics.com##.hot-list > h4:has-text(Popular Right Now):nth-ancestor(2)
@@ -1887,6 +1903,12 @@ phys.org##.mb-5.pt-5.row
 phys.org##.d-print-none.d-lg-block.d-none.article-sidebar.col-xl-3.col-lg-4.col-md.offset-xl-1
 phys.org##.show.fade.bg-danger.py-2.alert
 phys.org##.d-print-none.order-lg-3.order-1.align-items-center.d-flex.ml-auto.my-lg-0.mb-sm-1.col-xl-6.col-lg-7.col-12
+
+! https://www.pinknews.co.uk
+www.pinknews.co.uk##.mypn_header_ribbon.container
+www.pinknews.co.uk##.pn-single-post-wrapper_latest-posts-side > .latest-posts-section > .latest-posts-section__posts
+www.pinknews.co.uk##.pn-pagicle-widget
+www.pinknews.co.uk##.pn-single-post-wrapper > .latest-posts-section > .latest-posts-section__posts
 
 ! https://www.republicworld.com
 www.republicworld.com##.relatedstory
@@ -1981,6 +2003,10 @@ threatpost.com##div.c-article__footer__col > .c-button--secondary.c-button
 threatpost.com##[href="https://indd.adobe.com/view/01579c19-a6ca-4cb0-8106-ed4d5d02a292"]:upward(1)
 threatpost.com##.menu-item-133958.menu-item-object-page.menu-item-type-post_type.menu-item
 
+! https://torrentfreak.com
+torrentfreak.com##.preview-article__category
+torrentfreak.com##.page__sidebar.col-4_md-12
+
 ! https://www.vice.com
 ! Footer crap
 www.vice.com##.recirc-footer
@@ -1988,6 +2014,9 @@ www.vice.com##.recirc-footer
 www.vice.com##.short-form__body__right-rail
 ! Email sub ad
 www.vice.com##.main-content > .observer > .observer__content > .short-form > .short-form__body > .short-form__body__article-body > .article__body-components > span.size--article.abc__textblock > p > em > strong:has-text(Want the best of VICE News straight to your inbox?):nth-ancestor(2)
+
+! https://www.vox.com
+www.vox.com##.visible.c-breaking-news
 
 ! https://www.washingtonpost.com
 www.washingtonpost.com###comments-wrapper
@@ -2042,6 +2071,9 @@ directory.fsf.org###fsf-modal-window-elem-container
 ||static.fsf.org/nosvn/banners/2020fundraiser-spring/$subdocument
 ||static.fsf.org/nosvn/join.en.png$image
 
+! https://www.drugsdata.org
+www.drugsdata.org##.noscript-copyright
+
 ! https://duckduckgo.com
 duckduckgo.com##.js-onboarding-ed.onboarding-ed
 duckduckgo.com##.header__label.showcase.header--aside__item
@@ -2080,6 +2112,7 @@ www.qwant.com##.footer__column_right.footer__column > .footer__menu--item:nth-of
 ! https://sourceforge.net
 sourceforge.net###dlp-voip-quote:upward(1)
 sourceforge.net###nels
+sourceforge.net##.sfdl-lite.sfdl.wide.green.button:upward(2)
 
 ! https://swisscows.com
 swisscows.com##.app-links
@@ -2156,10 +2189,18 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/css/$domain=climatemirror.org
 @@||use.typekit.net^$domain=celyad.com|wellandgood.com
+! Spotify
+@@||video-akp-cdn-spotify-com.akamaized.net^
+@@||open.scdn.co/cdn/fonts/*$font,domain=spotify.com
+! Outlook
+@@||outlook-1.cdn.office.net$font,domain=outlook.office.com|outlook.office365.com
 @@||static2.sharepointonline.com$font,domain=outlook.office.com
-@@||outlook-1.cdn.office.net$font,domain=outlook.office.com
+! Mega
 @@||na.static.mega.co.nz$font,domain=mega.nz
+! Netflix
 @@||assets.nflxext.com^$font,domain=www.netflix.com
+! NewEgg
+@@||neweggimages.com^$font,domain=www.newegg.com
 
 
 
@@ -2176,3 +2217,6 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 ! "Fake" news...Let people decide that for themselves
 ||100percentfedup.com^$badfilter
 ||disclose.tv^$badfilter
+! Survey sites are okay so long as it's first party
+||qualtrics.com^$badfilter
+||qualtrics.com^$3p

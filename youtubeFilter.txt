@@ -46,14 +46,22 @@ www.youtube.com###container > .ytd-video-primary-info-renderer.style-scope.super
 www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(3)
 www.youtube.com##.ytd-mini-guide-entry-renderer.style-scope.title:has-text(Home):nth-ancestor(2)
 www.youtube.com###voice-search-button
-www.youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(1)
 ! Annoying player controls
 www.youtube.com##.ytp-button.ytp-miniplayer-button
 www.youtube.com##.ytp-autonav-toggle-button-container:upward(1)
+www.youtube.com###title:has-text(reddit):upward(2)
+www.youtube.com###title:has-text(Skyrock):upward(2)
+www.youtube.com###title:has-text(goo):upward(2)
+www.youtube.com###title:has-text(카카오스토리):upward(2)
+www.youtube.com##.ytp-button.ytp-size-button
+www.youtube.com###chat
+www.youtube.com##.ytp-scroll-min.ytp-related-on-error-overlay
+
 ! Wide comments
-www.youtube.com###secondary:style(width:0px !important)
-www.youtube.com###primary:style(max-width: 100% !important)
-www.youtube.com###secondary:style(min-width:0px !important)
+!www.youtube.com###secondary:style(width:0px !important)
+!www.youtube.com###primary:style(max-width: 100% !important)
+!www.youtube.com###secondary:style(min-width:0px !important)
+!www.youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(1)
 
 ! Rickrolls
 ||youtube.com/watch?v=dQw4w9WgXcQ^

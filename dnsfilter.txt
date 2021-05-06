@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web DNS Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Tuesday, 12 Jan 2020
+! Updated: Thursday, 06 May 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -138,6 +138,8 @@
 ||netpay1.com^
 ! Fake marketplace
 ||biosagentplus.com^
+! Fake investment scheme
+||axxiomoptionglobal.com^
 
 
 
@@ -979,6 +981,8 @@
 ||graph.instagram.com^
 ||analytics.tiktok.com^
 ||syndication.twitter.com^
+! Only Fans
+||bug2.onlyfans.com^
 
 
 ! Subsection: Web analytics
@@ -1511,6 +1515,7 @@
 ||craftprimes.com^
 ||criticalltech.com^
 ||cybertransfer.net^
+||nancypetroff.com^
 
 
 ! Subsection: Malvertising
