@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Thursday, 06 May 2021
+! Updated: Wednesday, 12 May 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -1357,6 +1357,11 @@
 
 ! Section: Malware
 
+! Subsection: Fake Software
+||afterburner-msi.space^
+||hipolink.me^
+
+
 ! Section: Browser hijackers
 
 ! Internet Explorer
@@ -1465,6 +1470,7 @@
 
 ||adqy6rzwcs.com^
 ||bestadbid.com^
+||galikos.com^
 
 
 ! Subsection: Malware pop-ups
