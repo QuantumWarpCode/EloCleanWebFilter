@@ -2,7 +2,7 @@
 ! Title: E'lo Clean Web DNS Filter
 ! Description: Say "E'lo" to a cleaner web!
 ! Expires: 7 days
-! Updated: Wednesday, 12 May 2021
+! Updated: Thursday, 13 May 2021
 ! License: https://github.com/QuantumWarpCode/EloCleanWebFilter/blob/master/LICENSE
 ! Homepage: https://github.com/QuantumWarpCode/EloCleanWebFilter
 ! GitHub issues: https://github.com/QuantumWarpCode/EloCleanWebFilter/issues
@@ -1541,6 +1541,8 @@
 
 ||ad2up.com^
 ||auslogics.com^
+||file.org^
+||videodownloaderultimate.com^
 
 
 ! Subsection: Various malware
