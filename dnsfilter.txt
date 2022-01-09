@@ -915,6 +915,7 @@
 ! Musically
 ||log.musical.ly^
 ! nVidia trackers
+||events.gfe.nvidia.com^
 ||telemetry.nvidia.com^
 ||telemetry.gfe.nvidia.com^
 ! Pinterest

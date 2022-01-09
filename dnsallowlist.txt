@@ -20,11 +20,33 @@
 @@||clients2.google.com^$important
 @@||android.clients.google.com^$important
 @@||googleapis.l.google.com^$important
-@@||gfwsl.geforce.com^$important
+
 @@||slscr.update.microsoft.com^$important
 @@||fe2cr.update.microsoft.com^$important
 @@||fe3cr.delivery.mp.microsoft.com^$important
 @@||tlu.dl.delivery.mp.microsoft.com^$important
+@@||ctldl.windowsupdate.com^$important
+@@||kv601.prod.do.dsp.mp.microsoft.com^$important
+@@||fs.microsoft.com^$important
+@@||ocsp.msocsp.com^$important
+@@||mscrl.microsoft.com^$important
+@@||crl.microsoft.com^$important
+@@||licensing.mp.microsoft.com^$important
+@@||support.microsoft.com^$important
+@@||go.microsoft.com^$important
+@@||download.windowsupdate.com^$important
+@@||definitionupdates.microsoft.com^$important
+@@||device.auth.xboxlive.com^$important
+@@||ocsp.digicert.com^$important
+@@||crl3.digicert.com^$important
+@@||crl4.digicert.com^$important
+@@||dlassets-ssl.xboxlive.com^$important
+@@||1drv.ms^$important
+@@||xsts.auth.xboxlive.com^$important
+
+@@||gfwsl.geforce.com^$important
+
+@@||connect.avid.com^$important
 
 
 
@@ -37,6 +59,7 @@
 ! EFF tracker simulation containing "track"
 @@||trackersimulator.org^$important
 @@||do-not-tracker.org^$important
+@@||eviltracker.net^$important
 
 
 
@@ -60,4 +83,6 @@
 @@||raidforums.com^
 ! "Fake" news...Let people decide that for themselves
 @@||100percentfedup.com^
+@@||allnewspipeline.com^
 @@||disclose.tv^
+@@||qualtrics.com^

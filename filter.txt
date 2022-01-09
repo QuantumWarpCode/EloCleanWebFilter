@@ -2223,6 +2223,7 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 ||raidforums.com^$badfilter
 ! "Fake" news...Let people decide that for themselves
 ||100percentfedup.com^$badfilter
+||allnewspipeline.com^$badfilter
 ||disclose.tv^$badfilter
 ! Survey sites are okay so long as it's first party
 ||qualtrics.com^$badfilter
