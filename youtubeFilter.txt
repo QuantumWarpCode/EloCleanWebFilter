@@ -63,6 +63,23 @@ www.youtube.com##.ytp-scroll-min.ytp-related-on-error-overlay
 !www.youtube.com###secondary:style(min-width:0px !important)
 !www.youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(1)
 
+! Notification bell
+www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
+! NFL Sunday Ticket
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##[href="https://tv.youtube.com/learn/nflsundayticket"]
+! Shorts tab
+www.youtube.com##.ytd-guide-entry-renderer.style-scope.title:has-text(Shorts):nth-ancestor(3)
+! Endscreen
+www.youtube.com##.ytp-show-tiles.videowall-endscreen.ytp-player-content.html5-endscreen
+! Join button
+www.youtube.com##.ytd-button-renderer.style-scope.yt-simple-endpoint > .size-default.style-suggestive.ytd-button-renderer.style-scope
+! Forgot what these do
+www.youtube.com##.ytp-ce-size-1920.ytp-ce-top-right-quad.ytp-ce-element-show.ytp-ce-channel-this.ytp-ce-channel.ytp-ce-element
+www.youtube.com##.ytp-ce-element
+www.youtube.com##ytd-toggle-button-renderer.style-text.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(3)
+www.youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+
 ! Rickrolls
 ||youtube.com/watch?v=dQw4w9WgXcQ^
 
@@ -93,6 +110,8 @@ odysee.com##.card.file-page__recommended
 odysee.com##.react-draggable.content__viewer--inline.content__viewer:style(margin-top:25px!important)
 odysee.com##.content__cover:style(background-image:none!important)
 
+odysee.com##.empty__wrap--padded.empty__wrap
+
 ! https://lbry.tv
 lbry.tv##.card.file-page__recommended
 
@@ -101,6 +120,9 @@ www.nicovideo.jp##.PreVideoStartPremiumLinkContainer
 nicovideo.jp#@#.FollowButton
 www.nicovideo.jp##.IchibaSuggest_Container
 www.nicovideo.jp##.IchibaForWatch
+
+! https://www.vimeo.com
+vimeo.com##.current_clip-24705554.contextclip-items > span
 
 
 
