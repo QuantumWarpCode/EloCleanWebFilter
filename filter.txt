@@ -1593,6 +1593,9 @@ bulbapedia.bulbagarden.net###upper-article
 www.nexusmods.com##.wrapper > div.clearfix.agroup
 www.nexusmods.com##.clearfix.agroup
 
+! https://nfssoundtrack.com
+nfssoundtrack.com##.dsq-brlink
+
 ! https://roll20.net
 roll20.net##.bna
 roll20.net##.homeannouncement
@@ -1671,6 +1674,9 @@ pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.sectionTitle > h2:h
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.userActions
 pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.tooltipPromo
 
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion##.mgp_icon-action-tags.mgp_icon.mgp_btn
+pornhub.com,pornhub.net,pornhub.org,pornhubthbh7ap3u.onion###under-player-playlists
+
 ! https://www.reddit.com
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
 www.reddit.com##h2:has-text(Recent posts):nth-ancestor(3)
@@ -1690,6 +1696,14 @@ www.reddit.com##a[href="https://www.reddit.com/chat"]
 ! https://soundcloud.com
 soundcloud.com##.statsBadge__upsell
 soundcloud.com##.header__goUpsell.header__link
+
+! https://stackoverflow.com
+stackoverflow.com##.js-consent-banner
+
+! https://threadreaderapp.com
+threadreaderapp.com##div.pb-5.container:nth-of-type(4) > .row > .col-12
+threadreaderapp.com##.hide-redundant.pd-4.hide-premium.entry-support.background-blue
+threadreaderapp.com##.footer
 
 ! https://trovo.live
 trovo.live##.transparent.normal.download-btn.cat-button
@@ -1713,6 +1727,9 @@ twitch.tv#?#.chat-line__message,.vod-message:has-text(you can link your Twitch a
 twitch.tv#?#.chat-line__message,.vod-message:has-text(/With Amazon prime you can subscribe for FREE/i)
 m.twitch.tv##.tw-c-background-base > li:has-text(you can link your Twitch account to your active Amazon Prime subscription)
 m.twitch.tv##.tw-c-background-base > li:has-text(/With Amazon prime you can subscribe for FREE/i)
+||vod-secure.twitch.tv/_404/404_processing_320x180.png$image
+www.twitch.tv##.click-handler
+www.twitch.tv##.extensions-dock__layout
 
 ! https://twitter.com
 twitter.com##h2 > div > span:has-text(What’s happening):nth-ancestor(10)
@@ -2086,12 +2103,19 @@ duckduckgo.com##.js-onboarding-ed.onboarding-ed
 duckduckgo.com##.header__label.showcase.header--aside__item
 duckduckgo.com##.social.header__label.header--aside__social.header--aside__item > .js-hl-button.header__clickable
 duckduckgo.com##.footer
+duckduckgo.com##.badge-link--newsletter.badge-link--thumbnail.js-badge-link.badge-link--serp.badge-link
+
+! https://www.etsy.com
+www.etsy.com##.wt-justify-content-center.wt-flex-xs-1.wt-display-flex-xs
 
 ! https://www.fantasynamegenerators.com
 ||www.fantasynamegenerators.com/images/backgrounds/noAdSquares.png$image
 
 ! https://www.frontiersin.org
 www.frontiersin.org##.container-cookies
+
+! https://www.hulu.com
+www.hulu.com##.cu-tophat.tophat
 
 ! https://*.instructure.com
 instructure.com###footer
@@ -2109,6 +2133,9 @@ www.netflix.com##.show-kids
 
 ! https://outlook.office365.com
 outlook.office365.com###whatsnew
+
+! https://www.pokemonpets.com
+www.pokemonpets.com##.info_7_2_8
 
 ! https://www.qwant.com
 www.qwant.com##.all_content
@@ -2196,14 +2223,24 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/css/$domain=climatemirror.org
 @@||use.typekit.net^$domain=celyad.com|wellandgood.com
+! Adobe Fonts
+@@||typekit.net^$domain=fonts.adobe.com
+! Sharepoint
+@@||cdn.office.net^$font,domain=sharepoint.com
 ! Spotify
 @@||video-akp-cdn-spotify-com.akamaized.net^
 @@||open.scdn.co/cdn/fonts/*$font,domain=spotify.com
+! OneDrive
+@@||spoprod-a.akamaihd.net/files/*$font,domain=onedrive.live.com
 ! Outlook
 @@||outlook-1.cdn.office.net$font,domain=outlook.office.com|outlook.office365.com
 @@||static2.sharepointonline.com$font,domain=outlook.office.com
+! MaxKeyboard
+@@||d2fu7qgd3tdbcc.cloudfront.net^$font,domain=www.maxkeyboard.com
 ! Mega
 @@||na.static.mega.co.nz$font,domain=mega.nz
+! MyBib
+@@||fonts.gstatic.com^$font,domain=mybib.com
 ! Netflix
 @@||assets.nflxext.com^$font,domain=www.netflix.com
 ! NewEgg
@@ -2228,3 +2265,6 @@ instructure.com##.ef-directory-header:style(position: relative !important;)
 ! Survey sites are okay so long as it's first party
 ||qualtrics.com^$badfilter
 ||qualtrics.com^$3p
+! The only known website blocked by the IDN Homograph Protection list
+@@||xn--elkjp-yua.no^
+
