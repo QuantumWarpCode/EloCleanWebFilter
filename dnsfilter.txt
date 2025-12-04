@@ -1538,6 +1538,22 @@
 ||consensu.org^
 
 
+! Subsection: ShadyPanda Chrome RCE
+
+||extensionplay.com^
+||yearnnewtab.com^
+||api.cgatgpt.net^
+||dergoodting.com^
+||cleanmasters.store^
+||s-85283.gotocdn.com^
+||s-82923.gotocdn.com^
+
+
+! Subsection: Email theft
+
+||giftshop.club^
+
+
 ! Subsection: Other potentially unwanted programs
 
 ||ad2up.com^
@@ -1547,6 +1563,7 @@
 
 
 ! Subsection: Various malware
+
 ||59cn7.com^
 ||7hor9gul4s.com^
 ||adfuture.cn^

@@ -56,6 +56,8 @@ www.youtube.com###title:has-text(카카오스토리):upward(2)
 www.youtube.com##.ytp-button.ytp-size-button
 www.youtube.com###chat
 www.youtube.com##.ytp-scroll-min.ytp-related-on-error-overlay
+! search suggestions
+www.youtube.com##.sbsb_a
 
 ! Wide comments
 !www.youtube.com###secondary:style(width:0px !important)
